@@ -1,7 +1,3 @@
-"use client";
-
-import { useState } from "react";
-
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
@@ -13,8 +9,6 @@ const navItems = [
 ];
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
-
   return (
     <header className="sticky top-0 z-50 border-b border-gray-200/60 bg-white/80 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
@@ -64,55 +58,45 @@ export default function Navbar() {
             Get started
           </a>
         </div>
-
-        {/* Mobile menu button */}
-        <button
-          aria-label="Toggle menu"
-          className="md:hidden"
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? (
-            <svg
-              className="h-6 w-6"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          ) : (
-            <svg
-              className="h-6 w-6"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3 6h18M3 12h18M3 18h18"
-              />
-            </svg>
-          )}
-        </button>
       </div>
 
-      {/* Mobile drawer */}
-      {open && (
-        <div className="md:hidden">
+      {/* Mobile menu (no-JS, details/summary) */}
+      <div className="md:hidden">
+        <details className="group">
+          <summary
+            className="flex cursor-pointer list-none items-center justify-between px-4 py-3 sm:px-6 lg:px-8"
+            aria-label="Toggle menu"
+          >
+            <span className="text-base font-semibold text-indigo-900">Menu</span>
+            <span className="inline-flex items-center">
+              {/* Hamburger icon */}
+              <svg
+                className="h-6 w-6 group-open:hidden"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 6h18M3 12h18M3 18h18" />
+              </svg>
+              {/* Close icon */}
+              <svg
+                className="hidden h-6 w-6 group-open:block"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </span>
+          </summary>
           <div className="mx-auto max-w-7xl px-4 pb-6 pt-2 sm:px-6 lg:px-8">
             <nav className="flex flex-col gap-4 py-2">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  onClick={() => setOpen(false)}
                   className="text-base text-gray-700 hover:text-gray-900"
                 >
                   {item.label}
@@ -122,13 +106,12 @@ export default function Navbar() {
             <a
               href="#get-started"
               className="mt-2 block w-full rounded-full border border-indigo-900 px-5 py-3 text-center font-semibold text-indigo-900 hover:bg-indigo-50"
-              onClick={() => setOpen(false)}
             >
               Get started
             </a>
           </div>
-        </div>
-      )}
+        </details>
+      </div>
     </header>
   );
 }
