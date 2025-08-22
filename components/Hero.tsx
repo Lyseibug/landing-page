@@ -1,4 +1,12 @@
-import { Zap } from "lucide-react";
+import {
+  Zap,
+  TrendingUp,
+  BarChart3,
+  PlayCircle,
+  Search,
+  Users,
+  DollarSign,
+} from "lucide-react";
 
 export default function Hero() {
   return (
@@ -11,12 +19,56 @@ export default function Hero() {
         backgroundSize: "22px 22px",
       }}
     >
+      {/* Floating stat pills (desktop only) */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 hidden lg:block">
+        <div className="absolute left-12 top-24">
+          <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
+            <TrendingUp className="h-4 w-4 text-indigo-500" />
+            <span>85% Business growth</span>
+          </div>
+        </div>
+
+        <div className="absolute right-12 top-28">
+          <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
+            <BarChart3 className="h-4 w-4 text-indigo-500" />
+            <span>4.5% Conversion rate</span>
+          </div>
+        </div>
+
+        <div className="absolute left-20 top-64">
+          <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
+            <Users className="h-4 w-4 text-green-500" />
+            <span>60% Leads generated</span>
+          </div>
+        </div>
+
+        <div className="absolute right-20 top-64">
+          <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
+            <PlayCircle className="h-4 w-4 text-rose-500" />
+            <span>55% Increased views</span>
+          </div>
+        </div>
+
+        <div className="absolute left-24 bottom-20">
+          <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
+            <DollarSign className="h-4 w-4 text-emerald-500" />
+            <span>50% Increased sales</span>
+          </div>
+        </div>
+
+        <div className="absolute right-24 bottom-20">
+          <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
+            <Search className="h-4 w-4 text-sky-500" />
+            <span>Top 3 search rankings</span>
+          </div>
+        </div>
+      </div>
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:py-32">
         {/* Top center pill */}
         <div className="mb-8 flex justify-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-900">
             <Zap className="h-4 w-4" />
-            <span>Reach new heights with Lyseibug</span>
+            <span>Reach new heights with Zenith</span>
           </div>
         </div>
 
@@ -27,9 +79,8 @@ export default function Hero() {
             <br className="hidden sm:block" /> marketing agency
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg">
-            Lyseibug is a dynamic digital marketing agency dedicated to
-            propelling businesses to the pinnacle of success in the digital
-            realm.
+            Zenith is a dynamic digital marketing agency dedicated to propelling
+            businesses to the pinnacle of success in the digital realm.
           </p>
 
           {/* CTAs */}

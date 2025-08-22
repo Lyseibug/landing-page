@@ -64,10 +64,9 @@ export default function Navbar() {
       <div className="md:hidden">
         <details className="group">
           <summary
-            className="flex cursor-pointer list-none items-center justify-between px-4 py-3 sm:px-6 lg:px-8"
+            className="absolute right-4 top-4 flex cursor-pointer list-none items-center p-2 sm:right-6 lg:right-8"
             aria-label="Toggle menu"
           >
-            <span className="text-base font-semibold text-indigo-900">Menu</span>
             <span className="inline-flex items-center">
               {/* Hamburger icon */}
               <svg
