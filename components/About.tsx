@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ABOUT_CONTENT } from "@/constants/content";
 
 export default function About() {
   return (
@@ -11,23 +12,20 @@ export default function About() {
           {/* Left column: copy */}
           <div>
             <div className="inline-flex items-center rounded-full bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-900">
-              About us
+              {ABOUT_CONTENT.badge}
             </div>
             <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-indigo-950 sm:text-4xl md:text-5xl">
-              Welcome to Zenith
+              {ABOUT_CONTENT.heading}
             </h2>
             <p className="mt-4 max-w-xl text-base leading-7 text-slate-600 sm:text-lg">
-              What sets us apart is our holistic approach to digital marketing. We
-              don&apos;t just focus on one aspect of your online presence – we take a
-              comprehensive view of your brand, your goals, and your target audience
-              to develop tailored strategies that drive real, measurable results.
+              {ABOUT_CONTENT.description}
             </p>
             <div className="mt-8">
               <a
-                href="#about"
+                href={ABOUT_CONTENT.cta.href}
                 className="inline-flex rounded-full border border-indigo-900 px-6 py-3 text-sm font-semibold text-indigo-900 transition-colors hover:bg-indigo-50 md:text-base"
               >
-                More about us
+                {ABOUT_CONTENT.cta.label}
               </a>
             </div>
           </div>
@@ -46,8 +44,8 @@ export default function About() {
 
             <div className="overflow-hidden rounded-3xl border border-gray-200 shadow-sm">
               <Image
-                src="/about.jpg"
-                alt="Team celebrating a successful project"
+                src={ABOUT_CONTENT.image.src}
+                alt={ABOUT_CONTENT.image.alt}
                 width={960}
                 height={640}
                 className="h-auto w-full object-cover"
@@ -59,12 +57,7 @@ export default function About() {
 
         {/* Stats */}
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            { value: "10", label: "Years of experience" },
-            { value: "3K", label: "Satisfied clients" },
-            { value: "2.5k", label: "Projects completed" },
-            { value: "10M+", label: "Revenue generated" },
-          ].map((item) => (
+          {ABOUT_CONTENT.stats.map((item) => (
             <div
               key={item.label}
               className="rounded-2xl border border-gray-200 p-8 text-center shadow-sm"

@@ -1,12 +1,4 @@
-const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Case studies", href: "#cases" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Blog", href: "#blog" },
-  { label: "Contact", href: "#contact" },
-];
+import { BRAND_NAME, NAV_ITEMS, NAV_TEXT } from "@/constants/content";
 
 export default function Navbar() {
   return (
@@ -16,12 +8,12 @@ export default function Navbar() {
           href="#home"
           className="text-xl font-semibold tracking-tight text-indigo-900"
         >
-          Lyseibug
+          {BRAND_NAME}
         </a>
 
         {/* Desktop nav */}
         <nav className="hidden items-center gap-8 md:flex">
-          {navItems.slice(0, 5).map((item) => (
+          {NAV_ITEMS.slice(0, 5).map((item) => (
             <a
               key={item.href}
               href={item.href}
@@ -36,7 +28,7 @@ export default function Navbar() {
               aria-haspopup="true"
               aria-expanded="false"
             >
-              More pages
+              {NAV_TEXT.morePages}
               <svg
                 className="h-4 w-4"
                 viewBox="0 0 20 20"
@@ -55,7 +47,7 @@ export default function Navbar() {
             href="#get-started"
             className="rounded-full border border-indigo-900 px-5 py-2 text-sm font-semibold text-indigo-900 transition-colors hover:bg-indigo-50"
           >
-            Get started
+            {NAV_TEXT.getStarted}
           </a>
         </div>
       </div>
@@ -65,7 +57,7 @@ export default function Navbar() {
         <details className="group">
           <summary
             className="absolute right-4 top-4 flex cursor-pointer list-none items-center p-2 sm:right-6 lg:right-8"
-            aria-label="Toggle menu"
+            aria-label={NAV_TEXT.toggleAriaLabel}
           >
             <span className="inline-flex items-center">
               {/* Hamburger icon */}
@@ -92,7 +84,7 @@ export default function Navbar() {
           </summary>
           <div className="mx-auto max-w-7xl px-4 pb-6 pt-2 sm:px-6 lg:px-8">
             <nav className="flex flex-col gap-4 py-2">
-              {navItems.map((item) => (
+              {NAV_ITEMS.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
@@ -106,7 +98,7 @@ export default function Navbar() {
               href="#get-started"
               className="mt-2 block w-full rounded-full border border-indigo-900 px-5 py-3 text-center font-semibold text-indigo-900 hover:bg-indigo-50"
             >
-              Get started
+              {NAV_TEXT.getStarted}
             </a>
           </div>
         </details>

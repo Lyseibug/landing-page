@@ -1,4 +1,5 @@
 import { BarChart3, Search, Users, Mail, PenTool } from "lucide-react";
+import { SERVICES_CONTENT, type ServiceText } from "@/constants/content";
 
 type Service = {
   title: string;
@@ -6,33 +7,12 @@ type Service = {
   icon: React.ElementType;
 };
 
-const services: Service[] = [
-  {
-    title: "Search Engine Optimization (SEO)",
-    description:
-      "Our SEO experts are dedicated to helping your website rank higher in search engine results pages (SERPs).",
-    icon: Search,
-  },
-  {
-    title: "Content Marketing",
-    description:
-      "Engage your audience and establish your brand as a thought leader with our content marketing services.",
-    icon: PenTool,
-  },
-  {
-    title: "Social Media Marketing",
-    description:
-      "We help you connect with your audience, build relationships, and drive engagement across various platforms.",
-    icon: Users,
-  },
-  {
-    title: "Email Marketing",
-    description:
-      "Nurture leads and drive conversions with our email marketing services, from newsletters to automated drip campaigns.",
-    icon: Mail,
-    },
-  
-];
+const serviceIcons: React.ElementType[] = [Search, PenTool, Users, Mail];
+const services: Service[] = SERVICES_CONTENT.items.map((item: ServiceText, index: number) => ({
+  title: item.title,
+  description: item.description,
+  icon: serviceIcons[index] ?? BarChart3,
+}));
 
 export default function Services() {
   return (
@@ -49,18 +29,16 @@ export default function Services() {
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:py-28">
         <div className="mb-8 flex justify-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-sm font-medium text-slate-700 shadow-sm">
-            Our services
+            {SERVICES_CONTENT.badge}
           </div>
         </div>
 
         <div className="text-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-indigo-950 sm:text-4xl md:text-5xl">
-            What We Offer
+            {SERVICES_CONTENT.heading}
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-700">
-            we offer a comprehensive suite of digital marketing services
-            designed to help businesses thrive in today’s competitive online
-            landscape.
+            {SERVICES_CONTENT.description}
           </p>
         </div>
 
@@ -87,7 +65,7 @@ export default function Services() {
                   href="#"
                   className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-indigo-700 hover:text-indigo-800"
                 >
-                  More details
+                  {SERVICES_CONTENT.moreDetailsLabel}
                   <svg
                     className="h-4 w-4"
                     viewBox="0 0 20 20"
@@ -104,10 +82,10 @@ export default function Services() {
 
         <div className="mt-12 flex justify-center md:mt-14">
           <a
-            href="#services"
+            href={SERVICES_CONTENT.viewAll.href}
             className="rounded-full border border-indigo-900 bg-white px-6 py-3 text-sm font-semibold text-indigo-900 shadow-sm transition-colors hover:bg-indigo-50 md:px-8 md:py-4 md:text-base"
           >
-            View all services
+            {SERVICES_CONTENT.viewAll.label}
           </a>
         </div>
       </div>

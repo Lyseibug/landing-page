@@ -7,6 +7,7 @@ import {
   Users,
   DollarSign,
 } from "lucide-react";
+import { HERO_CONTENT } from "@/constants/content";
 
 export default function Hero() {
   return (
@@ -25,42 +26,42 @@ export default function Hero() {
           <div className="absolute left-12 top-24">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
               <TrendingUp className="h-4 w-4 text-indigo-500" />
-              <span>85% Business growth</span>
+              <span>{HERO_CONTENT.statPills[0]}</span>
             </div>
           </div>
 
           <div className="absolute right-12 top-28">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
               <BarChart3 className="h-4 w-4 text-indigo-500" />
-              <span>4.5% Conversion rate</span>
+              <span>{HERO_CONTENT.statPills[1]}</span>
             </div>
           </div>
 
           <div className="absolute left-20 top-75">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
               <Users className="h-4 w-4 text-green-500" />
-              <span>60% Leads generated</span>
+              <span>{HERO_CONTENT.statPills[2]}</span>
             </div>
           </div>
 
           <div className="absolute right-20 top-75">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
               <PlayCircle className="h-4 w-4 text-rose-500" />
-              <span>55% Increased views</span>
+              <span>{HERO_CONTENT.statPills[3]}</span>
             </div>
           </div>
 
           <div className="absolute left-30 top-120">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
               <DollarSign className="h-4 w-4 text-emerald-500" />
-              <span>50% Increased sales</span>
+              <span>{HERO_CONTENT.statPills[4]}</span>
             </div>
           </div>
 
           <div className="absolute right-30 top-120">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
               <Search className="h-4 w-4 text-sky-500" />
-              <span>Top 3 search rankings</span>
+              <span>{HERO_CONTENT.statPills[5]}</span>
             </div>
           </div>
         </div>
@@ -68,34 +69,33 @@ export default function Hero() {
         <div className="mb-8 flex justify-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-900">
             <Zap className="h-4 w-4" />
-            <span>Reach new heights with Zenith</span>
+            <span>{HERO_CONTENT.tagline}</span>
           </div>
         </div>
 
         {/* Headline */}
         <div className="text-center">
           <h1 className="mx-auto max-w-5xl text-4xl font-extrabold tracking-tight text-indigo-950 sm:text-5xl md:text-6xl lg:text-7xl">
-            Expert <span className="text-indigo-700">strategies</span> from our
-            <br className="hidden sm:block" /> marketing agency
+            {HERO_CONTENT.headline.pre} <span className="text-indigo-700">{HERO_CONTENT.headline.highlight}</span> {HERO_CONTENT.headline.post}
+            <br className="hidden sm:block" /> {HERO_CONTENT.headline.line2}
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg">
-            Zenith is a dynamic digital marketing agency dedicated to propelling
-            businesses to the pinnacle of success in the digital realm.
+            {HERO_CONTENT.description}
           </p>
 
           {/* CTAs */}
           <div className="mt-10 flex items-center justify-center gap-4">
             <a
-              href="#get-started"
+              href={HERO_CONTENT.ctas.primary.href}
               className="rounded-full bg-indigo-900 px-8 py-4 text-base font-semibold text-white shadow-sm transition-colors hover:bg-indigo-800 md:text-lg"
             >
-              Get Started
+              {HERO_CONTENT.ctas.primary.label}
             </a>
             <a
-              href="#contact"
+              href={HERO_CONTENT.ctas.secondary.href}
               className="rounded-full border border-indigo-900 px-8 py-4 text-base font-semibold text-indigo-900 transition-colors hover:bg-indigo-50 md:text-lg"
             >
-              Contact Us
+              {HERO_CONTENT.ctas.secondary.label}
             </a>
           </div>
         </div>

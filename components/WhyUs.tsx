@@ -1,27 +1,5 @@
 import Image from "next/image";
-
-const reasons = [
-  {
-    title: "Proven Track Record",
-    description:
-      "With years of experience in the industry, we have a proven track record of delivering exceptional results for our clients.",
-  },
-  {
-    title: "Tailored Solutions",
-    description:
-      "Whether you're a small startup or a large enterprise, we'll work closely with you to develop customized strategies that align with your objectives and budget.",
-  },
-  {
-    title: "Results-Driven Approach",
-    description:
-      "Whether your goal is to boost sales, increase brand awareness, or drive website traffic, we'll work tirelessly to help you achieve success.",
-  },
-  {
-    title: "Exceptional Customer Service",
-    description:
-      "Your satisfaction is our top priority. Our dedicated team is here to ensure that your experience with us is nothing short of exceptional.",
-  },
-];
+import { WHY_US_CONTENT } from "@/constants/content";
 
 export default function WhyUs() {
   return (
@@ -34,18 +12,17 @@ export default function WhyUs() {
           {/* Left: copy and list */}
           <div className="mx-auto max-w-2xl text-center lg:mx-0 lg:max-w-none lg:text-left">
             <div className="inline-flex items-center rounded-full bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-900 mx-auto lg:mx-0">
-              Why choose us
+              {WHY_US_CONTENT.badge}
             </div>
             <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-indigo-950 sm:text-4xl md:text-5xl">
-              Why go with Zenith?
+              {WHY_US_CONTENT.heading}
             </h2>
             <p className="mt-4 max-w-xl text-base leading-7 text-slate-600 sm:text-lg">
-              At Zenith, we understand that choosing the right digital marketing
-              partner is a crucial decision for your business.
+              {WHY_US_CONTENT.description}
             </p>
 
             <div className="mt-8 space-y-5 md:mt-10">
-              {reasons.map((item, index) => (
+              {WHY_US_CONTENT.reasons.map((item, index) => (
                 <div
                   key={item.title}
                   className="relative rounded-2xl border border-indigo-200 p-5 shadow-sm md:p-6"
@@ -80,8 +57,8 @@ export default function WhyUs() {
 
             <div className="overflow-hidden rounded-3xl border border-gray-200 shadow-sm">
               <Image
-                src="/about.jpg"
-                alt="Team meeting in a bright office"
+                src={WHY_US_CONTENT.image.src}
+                alt={WHY_US_CONTENT.image.alt}
                 width={960}
                 height={1387}
                 className="h-auto w-full object-cover"
