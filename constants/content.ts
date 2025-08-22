@@ -126,4 +126,62 @@ export const WHY_US_CONTENT = {
   },
 } as const;
 
+export type CaseStat = { icon: "chart" | "growth"; label: string };
+export type CaseStudy = {
+  client: string;
+  title: string;
+  image: { src: string; alt: string };
+  stats: CaseStat[];
+  cta: { label: string; href: string };
+};
+
+export const CASE_STUDIES_CONTENT = {
+  badge: "Case studies",
+  heading: "Our success stories",
+  description:
+    "Discover how Zenith has helped businesses like yours achieve their digital marketing goals with our comprehensive solutions.",
+  items: [
+    {
+      client: "FitWell Fitness",
+      title: "Email marketing automation",
+      image: { src: "/cases/gmail.jpg", alt: "Laptop with Gmail logo" },
+      stats: [
+        { icon: "growth", label: "50% Member engagement" },
+        { icon: "chart", label: "20% Upsell opportunities" },
+      ],
+      cta: { label: "Full case study", href: "#" },
+    },
+    {
+      client: "Healthy Habits",
+      title: "Content marketing ROI",
+      image: { src: "/cases/desk.jpg", alt: "Workspace top view" },
+      stats: [
+        { icon: "growth", label: "50% Website traffic" },
+        { icon: "chart", label: "Increased engagement" },
+      ],
+      cta: { label: "Full case study", href: "#" },
+    },
+    {
+      client: "Tech Innovations",
+      title: "Lead generation campaign",
+      image: { src: "/cases/laptop-social.jpg", alt: "Laptop with social media" },
+      stats: [
+        { icon: "growth", label: "60% Lead generated" },
+        { icon: "chart", label: "45% Increased sales" },
+      ],
+      cta: { label: "Full case study", href: "#" },
+    },
+    {
+      client: "City Cafe",
+      title: "Local SEO Success Story",
+      image: { src: "/cases/analytics.jpg", alt: "Analytics dashboard" },
+      stats: [
+        { icon: "growth", label: "Top 3 search rankings" },
+        { icon: "chart", label: "40% Foot traffic" },
+      ],
+      cta: { label: "Full case study", href: "#" },
+    },
+  ] as CaseStudy[],
+  viewAll: { label: "View all case studies", href: "#" },
+} as const;
 
