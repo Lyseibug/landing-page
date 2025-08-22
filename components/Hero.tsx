@@ -19,51 +19,51 @@ export default function Hero() {
         backgroundSize: "22px 22px",
       }}
     >
-      {/* Floating stat pills (desktop only) */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 hidden lg:block">
-        <div className="absolute left-12 top-24">
-          <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-            <TrendingUp className="h-4 w-4 text-indigo-500" />
-            <span>85% Business growth</span>
+      <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:py-32">
+        {/* Floating stat pills (desktop only) */}
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 hidden lg:block">
+          <div className="absolute left-12 top-24">
+            <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
+              <TrendingUp className="h-4 w-4 text-indigo-500" />
+              <span>85% Business growth</span>
+            </div>
           </div>
-        </div>
 
-        <div className="absolute right-12 top-28">
-          <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-            <BarChart3 className="h-4 w-4 text-indigo-500" />
-            <span>4.5% Conversion rate</span>
+          <div className="absolute right-12 top-28">
+            <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
+              <BarChart3 className="h-4 w-4 text-indigo-500" />
+              <span>4.5% Conversion rate</span>
+            </div>
           </div>
-        </div>
 
-        <div className="absolute left-20 top-64">
-          <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-            <Users className="h-4 w-4 text-green-500" />
-            <span>60% Leads generated</span>
+          <div className="absolute left-20 top-75">
+            <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
+              <Users className="h-4 w-4 text-green-500" />
+              <span>60% Leads generated</span>
+            </div>
           </div>
-        </div>
 
-        <div className="absolute right-20 top-64">
-          <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-            <PlayCircle className="h-4 w-4 text-rose-500" />
-            <span>55% Increased views</span>
+          <div className="absolute right-20 top-75">
+            <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
+              <PlayCircle className="h-4 w-4 text-rose-500" />
+              <span>55% Increased views</span>
+            </div>
           </div>
-        </div>
 
-        <div className="absolute left-24 bottom-20">
-          <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-            <DollarSign className="h-4 w-4 text-emerald-500" />
-            <span>50% Increased sales</span>
+          <div className="absolute left-30 top-120">
+            <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
+              <DollarSign className="h-4 w-4 text-emerald-500" />
+              <span>50% Increased sales</span>
+            </div>
           </div>
-        </div>
 
-        <div className="absolute right-24 bottom-20">
-          <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-            <Search className="h-4 w-4 text-sky-500" />
-            <span>Top 3 search rankings</span>
+          <div className="absolute right-30 top-120">
+            <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
+              <Search className="h-4 w-4 text-sky-500" />
+              <span>Top 3 search rankings</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:py-32">
         {/* Top center pill */}
         <div className="mb-8 flex justify-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-900">
