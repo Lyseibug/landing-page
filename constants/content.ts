@@ -1,6 +1,6 @@
 export type NavItem = { label: string; href: string };
 
-export const BRAND_NAME = "Lyseibug";
+export const BRAND_NAME = "Zenith";
 
 export const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "#home" },
@@ -191,5 +191,61 @@ export const CTA_CONTENT = {
   description:
     "Ready to discuss your digital marketing goals and how we can help you achieve them? Schedule a complimentary consultation with one of our experts.",
   cta: { label: "Schedule a free consultation", href: "#contact" },
+} as const;
+
+// Footer content
+export const FOOTER_CONTENT = {
+  contact: {
+    email: "info@zenith.com",
+    phone: "(123) 456 7890",
+    addressLines: [
+      "Street Address",
+      "Your City, State, Zip Code",
+      "Country",
+    ],
+  },
+  socials: [
+    { label: "Twitter", href: "#" },
+    { label: "LinkedIn", href: "#" },
+    { label: "Facebook", href: "#" },
+  ],
+  columns: [
+    {
+      title: "Pages",
+      links: [
+        { label: "Home", href: "#home" },
+        { label: "About", href: "#about" },
+        { label: "Services", href: "#services" },
+        { label: "Pricing", href: "#pricing" },
+        { label: "Case studies", href: "#cases" },
+        { label: "Blog", href: "#blog" },
+        { label: "Contact", href: "#contact" },
+      ],
+    },
+    {
+      title: "Utility",
+      links: [
+        { label: "FAQs", href: "#" },
+        { label: "404", href: "#" },
+        { label: "Privacy policy", href: "#" },
+        { label: "Terms & conditions", href: "#" },
+      ],
+    },
+    {
+      title: "Our services",
+      links: [
+        { label: "Search Engine Optimization (SEO)", href: "#services" },
+        { label: "Content Marketing", href: "#services" },
+        { label: "Social Media Marketing", href: "#services" },
+        { label: "Email Marketing", href: "#services" },
+        { label: "Analytics and Reporting", href: "#services" },
+        { label: "Conversion Rate Optimization (CRO)", href: "#services" },
+      ],
+    },
+  ],
+  bottomBar: {
+    left: "Designed in Framer By Thaer",
+    right: "© Copyright 2024",
+  },
 } as const;
 

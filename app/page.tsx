@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
 import CaseStudies from "@/components/CaseStudies";
 import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <WhyUs />
       <CaseStudies />
       <CTA />
+      <Footer />
     </>
   );
 }

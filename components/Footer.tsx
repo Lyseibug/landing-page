@@ -1,0 +1,78 @@
+import { BRAND_NAME, FOOTER_CONTENT } from "@/constants/content";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import type { ReactNode } from "react";
+
+const socialIconMap: Record<string, ReactNode> = {
+  Twitter: <Twitter className="h-4 w-4" aria-hidden />,
+  LinkedIn: <Linkedin className="h-4 w-4" aria-hidden />,
+  Instagram: <Instagram className="h-4 w-4" aria-hidden />,
+  Facebook: <Facebook className="h-4 w-4" aria-hidden />,
+};
+
+export default function Footer() {
+  return (
+    <footer className="border-t border-gray-200/60 bg-white">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        {/* Top grid: Contact + Columns */}
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
+          {/* Brand + contact */}
+          <div className="text-center md:text-left">
+            <div className="text-3xl font-semibold tracking-tight text-indigo-900">
+              {BRAND_NAME}
+            </div>
+            <div className="mt-6 space-y-3 text-sm text-slate-700">
+              <div>{FOOTER_CONTENT.contact.email}</div>
+              <div>{FOOTER_CONTENT.contact.phone}</div>
+              <div>
+                <div>Street Address</div>
+                <div>Your City, State, Zip Code</div>
+                <div>Country</div>
+              </div>
+            </div>
+            <div className="mt-5 flex items-center justify-center gap-4 md:justify-start">
+              {FOOTER_CONTENT.socials.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  aria-label={s.label}
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 text-slate-700 transition-colors hover:bg-gray-50"
+                >
+                  {socialIconMap[s.label]}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Columns */}
+          {FOOTER_CONTENT.columns.map((col) => (
+            <div key={col.title}>
+              <h3 className="border-b border-gray-200 pb-2 text-base font-semibold text-slate-900">
+                {col.title}
+              </h3>
+              <ul className="mt-4 space-y-3">
+                {col.links.map((link) => (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      className="text-sm text-slate-700 transition-colors hover:text-slate-900"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom bar */}
+        <div className="mt-10 border-t border-gray-200 pt-6">
+          <div className="flex flex-col items-center justify-between gap-4 text-center text-sm text-slate-700 md:flex-row md:text-left">
+            <div>{FOOTER_CONTENT.bottomBar.left}</div>
+            <div>{FOOTER_CONTENT.bottomBar.right}</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
