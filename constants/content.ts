@@ -54,10 +54,10 @@ export const ABOUT_CONTENT = {
     alt: "Developers collaborating on software projects",
   },
   stats: [
-    { value: "8+", label: "Years of experience" },
-    { value: "500+", label: "Satisfied clients" },
-    { value: "1K+", label: "Projects completed" },
-    { value: "15+", label: "Industries served" },
+    { value: "3+", label: "Years of experience" },
+    { value: "10+", label: "Satisfied clients" },
+    { value: "13+", label: "Projects completed" },
+    { value: "5+", label: "Industries served" },
   ],
 } as const;
 
@@ -94,6 +94,12 @@ export const SERVICES_CONTENT = {
       description:
         "Get reliable IT support and expert consultancy to keep your systems secure, efficient, and future-ready.",
     },
+    {
+      title: "Business Solutions",
+      description: "Drive growth and efficiency with our tailored business solutions designed to optimize performance and support your success."
+    }
+
+
   ] as ServiceText[],
   moreDetailsLabel: "More details",
   viewAll: { label: "View all services", href: "#services" },

@@ -1,11 +1,10 @@
 import {
-  Zap,
   TrendingUp,
+  FolderKanban,
+  Zap,
   BarChart3,
-  PlayCircle,
-  Search,
-  Users,
-  DollarSign,
+  ShieldCheck,
+  Headphones,
 } from "lucide-react";
 import { HERO_CONTENT } from "@/constants/content";
 
@@ -22,46 +21,54 @@ export default function Hero() {
     >
       <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:py-32">
         {/* Floating stat pills (desktop only) */}
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0 hidden lg:block">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 hidden lg:block"
+        >
           <div className="absolute left-12 top-24">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
               <TrendingUp className="h-4 w-4 text-indigo-500" />
-              <span>{HERO_CONTENT.statPills[0]}</span>
+              <span>{HERO_CONTENT.statPills[0]}</span>{" "}
+              {/* 95% Client retention */}
             </div>
           </div>
 
           <div className="absolute right-12 top-28">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-              <BarChart3 className="h-4 w-4 text-indigo-500" />
-              <span>{HERO_CONTENT.statPills[1]}</span>
+              <FolderKanban className="h-4 w-4 text-indigo-500" />
+              <span>{HERO_CONTENT.statPills[1]}</span>{" "}
+              {/* 200+ Projects delivered */}
             </div>
           </div>
 
           <div className="absolute left-20 top-75">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-              <Users className="h-4 w-4 text-green-500" />
-              <span>{HERO_CONTENT.statPills[2]}</span>
+              <Zap className="h-4 w-4 text-yellow-500" />
+              <span>{HERO_CONTENT.statPills[2]}</span>{" "}
+              {/* 70% Faster deployment */}
             </div>
           </div>
 
           <div className="absolute right-20 top-75">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-              <PlayCircle className="h-4 w-4 text-rose-500" />
-              <span>{HERO_CONTENT.statPills[3]}</span>
+              <BarChart3 className="h-4 w-4 text-rose-500" />
+              <span>{HERO_CONTENT.statPills[3]}</span>{" "}
+              {/* 5x Business scalability */}
             </div>
           </div>
 
           <div className="absolute left-30 top-120">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-              <DollarSign className="h-4 w-4 text-emerald-500" />
-              <span>{HERO_CONTENT.statPills[4]}</span>
+              <ShieldCheck className="h-4 w-4 text-emerald-500" />
+              <span>{HERO_CONTENT.statPills[4]}</span>{" "}
+              {/* Trusted by startups & enterprises */}
             </div>
           </div>
 
           <div className="absolute right-30 top-120">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-              <Search className="h-4 w-4 text-sky-500" />
-              <span>{HERO_CONTENT.statPills[5]}</span>
+              <Headphones className="h-4 w-4 text-sky-500" />
+              <span>{HERO_CONTENT.statPills[5]}</span> {/* 24/7 IT support */}
             </div>
           </div>
         </div>
@@ -76,7 +83,11 @@ export default function Hero() {
         {/* Headline */}
         <div className="text-center">
           <h1 className="mx-auto max-w-5xl text-4xl font-extrabold tracking-tight text-indigo-950 sm:text-5xl md:text-6xl lg:text-7xl">
-            {HERO_CONTENT.headline.pre} <span className="text-indigo-700">{HERO_CONTENT.headline.highlight}</span> {HERO_CONTENT.headline.post}
+            {HERO_CONTENT.headline.pre}{" "}
+            <span className="text-indigo-700">
+              {HERO_CONTENT.headline.highlight}
+            </span>{" "}
+            {HERO_CONTENT.headline.post}
             <br className="hidden sm:block" /> {HERO_CONTENT.headline.line2}
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg">
