@@ -185,3 +185,11 @@ export const CASE_STUDIES_CONTENT = {
   viewAll: { label: "View all case studies", href: "#" },
 } as const;
 
+export const CTA_CONTENT = {
+  headingLine1: "Ready to take your digital",
+  headingLine2: "marketing to the next level?",
+  description:
+    "Ready to discuss your digital marketing goals and how we can help you achieve them? Schedule a complimentary consultation with one of our experts.",
+  cta: { label: "Schedule a free consultation", href: "#contact" },
+} as const;
+
