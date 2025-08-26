@@ -1,6 +1,6 @@
 export type NavItem = { label: string; href: string };
 
-export const BRAND_NAME = "Zenith";
+export const BRAND_NAME = "Lyseibug";
 
 export const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "#home" },
@@ -20,22 +20,23 @@ export const NAV_TEXT = {
 
 export const HERO_CONTENT = {
   statPills: [
-    "85% Business growth",
-    "4.5% Conversion rate",
-    "60% Leads generated",
-    "55% Increased views",
-    "50% Increased sales",
-    "Top 3 search rankings",
+    "95% Client retention",
+    "200+ Projects delivered",
+    "70% Faster deployment",
+    "5x Business scalability",
+    "Trusted by startups & enterprises",
+    "24/7 IT support",
   ],
-  tagline: "Reach new heights with Zenith",
+  tagline: "Building smarter software for tomorrow",
   headline: {
-    pre: "Expert",
-    highlight: "strategies",
-    post: "from our",
-    line2: "marketing agency",
+    pre: "Smart",
+    highlight: "software solutions",
+    post: "for",
+    line2: "business growth",
   },
   description:
-    "Zenith is a dynamic digital marketing agency dedicated to propelling businesses to the pinnacle of success in the digital realm.",
+    "Lyseibug builds scalable websites, apps, and ERP systems with reliable IT support to fuel your growth.",
+
   ctas: {
     primary: { label: "Get Started", href: "#get-started" },
     secondary: { label: "Contact Us", href: "#contact" },
@@ -44,19 +45,19 @@ export const HERO_CONTENT = {
 
 export const ABOUT_CONTENT = {
   badge: "About us",
-  heading: "Welcome to Zenith",
+  heading: "Welcome to Lyseibug",
   description:
-    "What sets us apart is our holistic approach to digital marketing. We don't just focus on one aspect of your online presence – we take a comprehensive view of your brand, your goals, and your target audience to develop tailored strategies that drive real, measurable results.",
+    "We are a technology-driven software agency dedicated to transforming business ideas into powerful digital solutions. From startups to enterprises, we craft tailored applications that boost efficiency, scalability, and customer satisfaction.",
   cta: { label: "More about us", href: "#about" },
   image: {
     src: "/about.jpg",
-    alt: "Team celebrating a successful project",
+    alt: "Developers collaborating on software projects",
   },
   stats: [
-    { value: "10", label: "Years of experience" },
-    { value: "3K", label: "Satisfied clients" },
-    { value: "2.5k", label: "Projects completed" },
-    { value: "10M+", label: "Revenue generated" },
+    { value: "8+", label: "Years of experience" },
+    { value: "500+", label: "Satisfied clients" },
+    { value: "1K+", label: "Projects completed" },
+    { value: "15+", label: "Industries served" },
   ],
 } as const;
 
@@ -66,27 +67,32 @@ export const SERVICES_CONTENT = {
   badge: "Our services",
   heading: "What We Offer",
   description:
-    "we offer a comprehensive suite of digital marketing services designed to help businesses thrive in today’s competitive online landscape.",
+    "We provide end-to-end software development and IT solutions that empower businesses to scale, innovate, and stay competitive in the digital era.",
   items: [
     {
-      title: "Search Engine Optimization (SEO)",
+      title: "Web Development",
       description:
-        "Our SEO experts are dedicated to helping your website rank higher in search engine results pages (SERPs).",
+        "We build high-performing, responsive, and secure websites tailored to your brand and business goals.",
     },
     {
-      title: "Content Marketing",
+      title: "Mobile App Development",
       description:
-        "Engage your audience and establish your brand as a thought leader with our content marketing services.",
+        "Our team creates user-friendly Android and iOS apps designed for performance, engagement, and growth.",
     },
     {
-      title: "Social Media Marketing",
+      title: "ERP Solutions",
       description:
-        "We help you connect with your audience, build relationships, and drive engagement across various platforms.",
+        "Streamline operations and improve productivity with our customized ERP software built to fit your processes.",
     },
     {
-      title: "Email Marketing",
+      title: "Software Rescue",
       description:
-        "Nurture leads and drive conversions with our email marketing services, from newsletters to automated drip campaigns.",
+        "We fix, upgrade, and optimize underperforming or incomplete software projects, saving you time and costs.",
+    },
+    {
+      title: "IT Support & Consultancy",
+      description:
+        "Get reliable IT support and expert consultancy to keep your systems secure, efficient, and future-ready.",
     },
   ] as ServiceText[],
   moreDetailsLabel: "More details",
@@ -95,34 +101,34 @@ export const SERVICES_CONTENT = {
 
 export const WHY_US_CONTENT = {
   badge: "Why choose us",
-  heading: "Why go with Zenith?",
+  heading: "Why partner with Lyseibug?",
   description:
-    "At Zenith, we understand that choosing the right digital marketing partner is a crucial decision for your business.",
+    "Choosing the right software partner can define your business success. Here’s why companies trust us:",
   reasons: [
     {
-      title: "Proven Track Record",
+      title: "Proven Expertise",
       description:
-        "With years of experience in the industry, we have a proven track record of delivering exceptional results for our clients.",
+        "With years of hands-on experience, we deliver software that works seamlessly and scales with your business.",
     },
     {
       title: "Tailored Solutions",
       description:
-        "Whether you're a small startup or a large enterprise, we'll work closely with you to develop customized strategies that align with your objectives and budget.",
+        "No one-size-fits-all. We customize every project to match your unique requirements and objectives.",
     },
     {
-      title: "Results-Driven Approach",
+      title: "End-to-End Support",
       description:
-        "Whether your goal is to boost sales, increase brand awareness, or drive website traffic, we'll work tirelessly to help you achieve success.",
+        "From consultation to deployment and ongoing support, we are with you every step of the way.",
     },
     {
-      title: "Exceptional Customer Service",
+      title: "Client-First Approach",
       description:
-        "Your satisfaction is our top priority. Our dedicated team is here to ensure that your experience with us is nothing short of exceptional.",
+        "Your success is our priority. We collaborate closely to ensure our solutions drive measurable business impact.",
     },
   ],
   image: {
-    src: "/about.jpg",
-    alt: "Team meeting in a bright office",
+    src: "/team.jpg",
+    alt: "Software agency team working on project",
   },
 } as const;
 
@@ -139,45 +145,35 @@ export const CASE_STUDIES_CONTENT = {
   badge: "Case studies",
   heading: "Our success stories",
   description:
-    "Discover how Zenith has helped businesses like yours achieve their digital marketing goals with our comprehensive solutions.",
+    "See how we’ve helped businesses solve complex challenges with innovative software solutions.",
   items: [
     {
-      client: "FitWell Fitness",
-      title: "Email marketing automation",
-      image: { src: "/cases/gmail.jpg", alt: "Laptop with Gmail logo" },
+      client: "FinEdge Banking",
+      title: "Custom ERP for finance management",
+      image: { src: "/cases/erp.jpg", alt: "ERP software dashboard" },
       stats: [
-        { icon: "growth", label: "50% Member engagement" },
-        { icon: "chart", label: "20% Upsell opportunities" },
+        { icon: "growth", label: "40% Faster operations" },
+        { icon: "chart", label: "30% Reduced costs" },
       ],
       cta: { label: "Full case study", href: "#" },
     },
     {
-      client: "Healthy Habits",
-      title: "Content marketing ROI",
-      image: { src: "/cases/desk.jpg", alt: "Workspace top view" },
+      client: "MobiMart",
+      title: "Scalable eCommerce mobile app",
+      image: { src: "/cases/mobile.jpg", alt: "Mobile shopping app" },
       stats: [
-        { icon: "growth", label: "50% Website traffic" },
-        { icon: "chart", label: "Increased engagement" },
+        { icon: "growth", label: "2x Customer engagement" },
+        { icon: "chart", label: "65% Higher sales" },
       ],
       cta: { label: "Full case study", href: "#" },
     },
     {
-      client: "Tech Innovations",
-      title: "Lead generation campaign",
-      image: { src: "/cases/laptop-social.jpg", alt: "Laptop with social media" },
+      client: "TechStart",
+      title: "Web platform rescue & optimization",
+      image: { src: "/cases/web.jpg", alt: "Code optimization" },
       stats: [
-        { icon: "growth", label: "60% Lead generated" },
-        { icon: "chart", label: "45% Increased sales" },
-      ],
-      cta: { label: "Full case study", href: "#" },
-    },
-    {
-      client: "City Cafe",
-      title: "Local SEO Success Story",
-      image: { src: "/cases/analytics.jpg", alt: "Analytics dashboard" },
-      stats: [
-        { icon: "growth", label: "Top 3 search rankings" },
-        { icon: "chart", label: "40% Foot traffic" },
+        { icon: "growth", label: "99.9% Uptime" },
+        { icon: "chart", label: "Improved performance" },
       ],
       cta: { label: "Full case study", href: "#" },
     },
@@ -186,22 +182,21 @@ export const CASE_STUDIES_CONTENT = {
 } as const;
 
 export const CTA_CONTENT = {
-  headingLine1: "Ready to take your digital",
-  headingLine2: "marketing to the next level?",
+  headingLine1: "Need reliable software",
+  headingLine2: "to power your business?",
   description:
-    "Ready to discuss your digital marketing goals and how we can help you achieve them? Schedule a complimentary consultation with one of our experts.",
+    "Let’s discuss your project and explore how Lyseibug can design, build, and support the right technology for you.",
   cta: { label: "Schedule a free consultation", href: "#contact" },
 } as const;
 
-// Footer content
 export const FOOTER_CONTENT = {
   contact: {
-    email: "info@zenith.com",
-    phone: "(123) 456 7890",
+    email: "info@lyseibug.com",
+    phone: "+91 6238 712 791",
     addressLines: [
-      "Street Address",
-      "Your City, State, Zip Code",
-      "Country",
+      "Venture Lab, SSMPTC",
+      "Tirur, Kerala  676105",
+      "India",
     ],
   },
   socials: [
@@ -226,7 +221,6 @@ export const FOOTER_CONTENT = {
       title: "Utility",
       links: [
         { label: "FAQs", href: "#" },
-        { label: "404", href: "#" },
         { label: "Privacy policy", href: "#" },
         { label: "Terms & conditions", href: "#" },
       ],
@@ -234,18 +228,16 @@ export const FOOTER_CONTENT = {
     {
       title: "Our services",
       links: [
-        { label: "Search Engine Optimization (SEO)", href: "#services" },
-        { label: "Content Marketing", href: "#services" },
-        { label: "Social Media Marketing", href: "#services" },
-        { label: "Email Marketing", href: "#services" },
-        { label: "Analytics and Reporting", href: "#services" },
-        { label: "Conversion Rate Optimization (CRO)", href: "#services" },
+        { label: "Web Development", href: "#services" },
+        { label: "Mobile App Development", href: "#services" },
+        { label: "ERP Solutions", href: "#services" },
+        { label: "Software Rescue", href: "#services" },
+        { label: "IT Support & Consultancy", href: "#services" },
       ],
     },
   ],
   bottomBar: {
-    left: "Designed in Framer By Thaer",
-    right: "© Copyright 2024",
+    left: "Designed with passion by Lyseibug",
+    right: "© Copyright 2025",
   },
 } as const;
-
