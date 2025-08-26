@@ -1,4 +1,13 @@
-import { BarChart3, Search, Users, Mail, PenTool } from "lucide-react";
+import {
+  Globe, // Web Development
+  Smartphone, // Mobile App Development
+  Boxes, // ERP Solutions
+  Wrench, // Software Rescue
+  Headphones, // IT Support & Consultancy
+  Briefcase, // Business Solutions
+  BarChart3, // Fallback
+} from "lucide-react";
+
 import { SERVICES_CONTENT, type ServiceText } from "@/constants/content";
 
 type Service = {
@@ -7,12 +16,22 @@ type Service = {
   icon: React.ElementType;
 };
 
-const serviceIcons: React.ElementType[] = [Search, PenTool, Users, Mail];
-const services: Service[] = SERVICES_CONTENT.items.map((item: ServiceText, index: number) => ({
-  title: item.title,
-  description: item.description,
-  icon: serviceIcons[index] ?? BarChart3,
-}));
+const serviceIcons: React.ElementType[] = [
+  Globe, // Web Development
+  Smartphone, // Mobile App Development
+  Boxes, // ERP Solutions
+  Wrench, // Software Rescue
+  Headphones, // IT Support & Consultancy
+  Briefcase, // Business Solutions
+];
+
+const services: Service[] = SERVICES_CONTENT.items.map(
+  (item: ServiceText, index: number) => ({
+    title: item.title,
+    description: item.description,
+    icon: serviceIcons[index] ?? BarChart3,
+  })
+);
 
 export default function Services() {
   return (

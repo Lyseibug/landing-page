@@ -24,9 +24,9 @@ export default function Footer() {
               <div>{FOOTER_CONTENT.contact.email}</div>
               <div>{FOOTER_CONTENT.contact.phone}</div>
               <div>
-                <div>Street Address</div>
-                <div>Your City, State, Zip Code</div>
-                <div>Country</div>
+                {FOOTER_CONTENT.contact.addressLines.map((line) => (
+                  <div key={line}>{line}</div>
+                ))}
               </div>
             </div>
             <div className="mt-5 flex items-center justify-center gap-4 md:justify-start">

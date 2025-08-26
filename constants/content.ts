@@ -21,7 +21,7 @@ export const NAV_TEXT = {
 export const HERO_CONTENT = {
   statPills: [
     "95% Client retention",
-    "200+ Projects delivered",
+    "13+ Projects delivered",
     "70% Faster deployment",
     "5x Business scalability",
     "Trusted by startups & enterprises",
@@ -50,7 +50,7 @@ export const ABOUT_CONTENT = {
     "We are a technology-driven software agency dedicated to transforming business ideas into powerful digital solutions. From startups to enterprises, we craft tailored applications that boost efficiency, scalability, and customer satisfaction.",
   cta: { label: "More about us", href: "#about" },
   image: {
-    src: "/about.jpg",
+    src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/about-us.webp",
     alt: "Developers collaborating on software projects",
   },
   stats: [
@@ -133,7 +133,7 @@ export const WHY_US_CONTENT = {
     },
   ],
   image: {
-    src: "/team.jpg",
+    src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/choose-us.webp",
     alt: "Software agency team working on project",
   },
 } as const;
