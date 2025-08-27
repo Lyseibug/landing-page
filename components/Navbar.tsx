@@ -22,23 +22,6 @@ export default function Navbar() {
               {item.label}
             </a>
           ))}
-          <div className="relative">
-            <button
-              className="flex items-center gap-1 text-sm text-gray-600 hover:text-gray-900"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              {NAV_TEXT.morePages}
-              <svg
-                className="h-4 w-4"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.118l3.71-3.887a.75.75 0 111.08 1.04l-4.24 4.44a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" />
-              </svg>
-            </button>
-          </div>
         </nav>
 
         {/* CTA button (desktop) */}
@@ -68,7 +51,11 @@ export default function Navbar() {
                 stroke="currentColor"
                 strokeWidth="2"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 6h18M3 12h18M3 18h18" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 6h18M3 12h18M3 18h18"
+                />
               </svg>
               {/* Close icon */}
               <svg
@@ -78,7 +65,11 @@ export default function Navbar() {
                 stroke="currentColor"
                 strokeWidth="2"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </span>
           </summary>
