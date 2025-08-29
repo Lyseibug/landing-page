@@ -75,6 +75,23 @@ export const ABOUT_CONTENT = {
   ],
 } as const;
 
+export const VISION_MISSION_CONTENT = {
+  image: {
+    src: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1600&auto=format&fit=crop",
+    alt: "Team meeting at a creative workspace",
+  },
+  mission: {
+    title: "Our Mission",
+    description:
+      "to empower businesses like yours to thrive in the digital age. We believe that every brand has a unique story to tell, and we're here to help you tell yours. We'll work hand-in-hand with you to unlock your brand's full potential and drive measurable results that propel your business forward.",
+  },
+  approach: {
+    title: "Our approach",
+    description:
+      "What sets us apart is our holistic approach to digital marketing. We don't just focus on one aspect of your online presence - we take a comprehensive view of your brand, your goals, and your target audience to develop customized strategies that deliver real, tangible results.",
+  },
+} as const;
+
 export type ServiceText = { title: string; description: string };
 
 export const SERVICES_CONTENT = {
