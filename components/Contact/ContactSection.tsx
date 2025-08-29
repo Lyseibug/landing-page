@@ -21,7 +21,7 @@ export default function ContactSection() {
           </h1>
           <p className="mx-auto mt-5 max-w-3xl text-sm leading-6 text-slate-700 sm:text-base">
             Whether you have questions about our services, want to discuss your
-            project in detail, or simply want to say hello, we're here to help.
+            project in detail, or simply want to say hello, we&apos;re here to help.
           </p>
         </div>
 
