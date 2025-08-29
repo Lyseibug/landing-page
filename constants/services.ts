@@ -120,3 +120,34 @@ export const SERVICES_PAGE_LIST: ServicePageItem[] = [
 ];
 
 
+// Our process section content (services page)
+export const SERVICES_PROCESS_CONTENT = {
+  badge: "Our process",
+  heading: "How we work",
+  description:
+    "We believe in taking a strategic and methodical approach to every project we undertake.",
+  steps: [
+    {
+      title: "Discovery",
+      description:
+        "We start by getting to know you and your business inside and out. We'll schedule a discovery call or meeting to discuss your goals, objectives, target audience, and unique challenges.",
+    },
+    {
+      title: "Strategy Development",
+      description:
+        "Next, we roll up our sleeves and dive into strategy development. Drawing on our expertise and industry insights, we'll develop a customized digital marketing strategy tailored to your specific needs and objectives.",
+    },
+    {
+      title: "Implementation",
+      description:
+        "With a solid strategy in place, it's time to put our plan into action. Our team of experts will work diligently to execute the various components of your digital marketing campaign.",
+    },
+    {
+      title: "Continuous Improvement",
+      description:
+        "Finally, we believe in the power of continuous improvement. We'll work closely with you to gather feedback, assess results, and identify opportunities for growth and refinement.",
+    },
+  ],
+} as const;
+
+
