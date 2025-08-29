@@ -1,37 +1,36 @@
 import { SERVICES_CONTENT, ServiceText } from "@/constants/services";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import {
-  faGlobe,
-  faMobileScreenButton,
-  faBoxesStacked,
-  faWrench,
-  faHeadphones,
-  faBriefcase,
-  faChartBar,
-} from "@fortawesome/free-solid-svg-icons";
+  type LucideIcon,
+  Globe,
+  Smartphone,
+  Boxes,
+  Wrench,
+  Headphones,
+  Briefcase,
+  BarChart,
+} from "lucide-react";
 
 type Service = {
   title: string;
   description: string;
-  icon: IconDefinition;
+  icon: LucideIcon;
 };
 
 const serviceIcons = [
-  faGlobe, // Web Development
-  faMobileScreenButton, // Mobile App Development
-  faBoxesStacked, // ERP Solutions
-  faWrench, // Software Rescue
-  faHeadphones, // IT Support & Consultancy
-  faBriefcase, // Business Solutions
+  Globe, // Web Development
+  Smartphone, // Mobile App Development
+  Boxes, // ERP Solutions
+  Wrench, // Software Rescue
+  Headphones, // IT Support & Consultancy
+  Briefcase, // Business Solutions
 ];
 
 const services: Service[] = SERVICES_CONTENT.items.map(
   (item: ServiceText, index: number) => ({
     title: item.title,
     description: item.description,
-    icon: serviceIcons[index] ?? faChartBar,
+    icon: serviceIcons[index] ?? BarChart,
   })
 );
 
@@ -64,14 +63,14 @@ export default function Services() {
         </div>
 
         {/* Cards */}
-        <div className="mt-12 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2">
+        <div className="mt-12 grid grid-cols-1 gap-8 md:gap-10 md:mt-16 md:grid-cols-2">
           {services.map((service) => (
             <article
               key={service.title}
               className="relative rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-transform hover:-translate-y-0.5 md:p-7"
             >
               <div className="pointer-events-none absolute left-0 -top-5 md:-left-5 flex h-12 w-12 items-center justify-center rounded-full bg-indigo-900 text-white shadow">
-                <FontAwesomeIcon icon={service.icon} className="h-6 w-6" />
+                <service.icon className="h-6 w-6" />
               </div>
 
               <div className="md:pl-2">
