@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { CASE_STUDIES_CONTENT } from "@/constants/content";
 import { TrendingUp, BarChart3 } from "lucide-react";
+import { CASE_STUDIES_CONTENT } from "@/constants/content";
 
 function StatPill({ type, label }: { type: "chart" | "growth"; label: string }) {
   const Icon = type === "growth" ? TrendingUp : BarChart3;

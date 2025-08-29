@@ -1,3 +1,4 @@
+import { HERO_CONTENT } from "@/constants/home";
 import {
   TrendingUp,
   FolderKanban,
@@ -6,7 +7,6 @@ import {
   ShieldCheck,
   Headphones,
 } from "lucide-react";
-import { HERO_CONTENT } from "@/constants/home";
 
 export default function Hero() {
   return (

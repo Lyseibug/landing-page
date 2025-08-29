@@ -2,10 +2,7 @@ import { CTA_CONTENT } from "@/constants/content";
 
 export default function CTA() {
   return (
-    <section
-      id="cta"
-      className="relative overflow-hidden bg-white"
-    >
+    <section id="cta" className="relative overflow-hidden bg-white">
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 md:py-14 lg:py-16">
         <div className="relative rounded-3xl border border-indigo-200/50 bg-[#cfe2ff]/80 p-6 shadow-md backdrop-blur sm:p-8 md:p-12 lg:p-14">
           <div
@@ -40,5 +37,3 @@ export default function CTA() {
     </section>
   );
 }
-
-

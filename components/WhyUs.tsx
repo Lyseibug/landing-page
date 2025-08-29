@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { WHY_US_CONTENT } from "@/constants/content";
+import Image from "next/image";
 
 export default function WhyUs() {
   return (
@@ -71,5 +71,3 @@ export default function WhyUs() {
     </section>
   );
 }
-
-

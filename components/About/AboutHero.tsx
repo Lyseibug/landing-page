@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { ABOUT_CONTENT, ABOUT_HERO_CONTENT } from "@/constants/about";
+import Image from "next/image";
 
 export default function AboutHero() {
   return (

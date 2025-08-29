@@ -1,5 +1,5 @@
+import { ABOUT_CONTENT } from "@/constants/about";
 import Image from "next/image";
-import { ABOUT_CONTENT } from "@/constants/content";
 
 export default function About() {
   return (
@@ -62,8 +62,12 @@ export default function About() {
               key={item.label}
               className="rounded-2xl border border-gray-200 p-8 text-center shadow-sm"
             >
-              <div className="text-3xl sm:text-4xl font-semibold text-indigo-900">{item.value}</div>
-              <div className="mt-2 text-base sm:text-lg text-slate-600">{item.label}</div>
+              <div className="text-3xl sm:text-4xl font-semibold text-indigo-900">
+                {item.value}
+              </div>
+              <div className="mt-2 text-base sm:text-lg text-slate-600">
+                {item.label}
+              </div>
             </div>
           ))}
         </div>
@@ -71,5 +75,3 @@ export default function About() {
     </section>
   );
 }
-
-

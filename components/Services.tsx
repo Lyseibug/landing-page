@@ -1,3 +1,4 @@
+import { SERVICES_CONTENT, ServiceText } from "@/constants/services";
 import {
   Globe, // Web Development
   Smartphone, // Mobile App Development
@@ -7,8 +8,6 @@ import {
   Briefcase, // Business Solutions
   BarChart3, // Fallback
 } from "lucide-react";
-
-import { SERVICES_CONTENT, type ServiceText } from "@/constants/services";
 
 type Service = {
   title: string;
