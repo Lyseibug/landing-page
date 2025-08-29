@@ -1,65 +1,57 @@
 export type ServiceText = { slug: string; title: string; description: string };
 
 export const SERVICES_HERO_CONTENT = {
-  badge: "Our services",
+  badge: "Our Services",
   headline: {
-    pre: "Empower your",
-    highlight: "growth",
-    post: "with our",
-    line2: "various services",
+    pre: "Transform your",
+    highlight: "business",
+    post: "with our expert",
+    line2: "software solutions",
   },
   description:
-    "we offer a comprehensive suite of digital marketing services designed to help businesses thrive in today's competitive online landscape.",
+    "We provide end-to-end software development and IT services designed to solve complex challenges, drive efficiency, and accelerate your digital growth.",
 } as const;
 
 export const SERVICES_CONTENT = {
-  badge: "Our services",
-  heading: "What We Offer",
+  badge: "What We Do",
+  heading: "Comprehensive Software & IT Services",
   description:
-    "We provide end-to-end software development and IT solutions that empower businesses to scale, innovate, and stay competitive in the digital era.",
+    "From concept to deployment and beyond, our full-stack expertise empowers businesses to innovate, scale, and maintain a competitive edge.",
   items: [
     {
       slug: "web-development",
       title: "Web Development",
       description:
-        "We build high-performing, responsive, and secure websites tailored to your brand and business goals.",
+        "Custom, high-performance websites and web applications built for user engagement, security, and scalability to achieve your business objectives.",
     },
     {
       slug: "mobile-app-development",
       title: "Mobile App Development",
       description:
-        "Our team creates user-friendly Android and iOS apps designed for performance, engagement, and growth.",
+        "Native and cross-platform mobile apps engineered for exceptional user experience, performance, and market success on iOS and Android.",
     },
     {
       slug: "erp-solutions",
       title: "ERP Solutions",
       description:
-        "Streamline operations and improve productivity with our customized ERP software built to fit your processes.",
+        "Integrated ERP systems that streamline your operations, centralize data, and provide actionable insights to improve productivity and decision-making.",
     },
     {
       slug: "software-rescue",
       title: "Software Rescue",
       description:
-        "We fix, upgrade, and optimize underperforming or incomplete software projects, saving you time and costs.",
+        "Get stalled or problematic software projects back on track. We audit, refactor, and deliver quality code to save you time and resources.",
     },
     {
       slug: "it-support-consultancy",
       title: "IT Support & Consultancy",
       description:
-        "Get reliable IT support and expert consultancy to keep your systems secure, efficient, and future-ready.",
+        "Proactive IT management and strategic consulting to ensure your infrastructure is secure, efficient, and aligned with your business goals.",
     },
-    {
-      slug: "business-solutions",
-      title: "Business Solutions",
-      description: "Drive growth and efficiency with our tailored business solutions designed to optimize performance and support your success."
-    }
-
-
   ] as ServiceText[],
-  moreDetailsLabel: "More details",
+  moreDetailsLabel: "Explore service",
   viewAll: { label: "View all services", href: "/services" },
 } as const;
-
 
 // Services page list section
 export type ServicePageItem = {
@@ -71,98 +63,86 @@ export type ServicePageItem = {
 
 export const SERVICES_PAGE_LIST: ServicePageItem[] = [
   {
-    slug: "seo",
-    title: "Search Engine Optimization (SEO)",
+    slug: "web-development",
+    title: "Web Development",
     description:
-      "Our SEO experts are dedicated to helping your website rank higher in search engine results pages (SERPs).",
+      "We craft responsive, secure, and scalable web solutions that convert visitors into customers and support your business growth.",
     image: {
-      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop",
-      alt: "Analytics dashboard showing SEO metrics",
+      src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1615&auto=format&fit=crop",
+      alt: "A developer coding a modern website interface",
     },
   },
   {
-    slug: "content-marketing",
-    title: "Content Marketing",
+    slug: "mobile-app-development",
+    title: "Mobile App Development",
     description:
-      "Engage your audience and establish your brand as a thought leader with our content marketing services.",
+      "Our team builds intuitive, high-performing mobile applications that deliver seamless user experiences and drive engagement.",
     image: {
-      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop",
-      alt: "Hand writing audience with arrows on whiteboard",
+      src: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1600&auto=format&fit=crop",
+      alt: "Hand holding a smartphone showing a beautifully designed app",
     },
   },
   {
-    slug: "social-media-marketing",
-    title: "Social Media Marketing",
+    slug: "erp-solutions",
+    title: "ERP Solutions",
     description:
-      "We help you connect with your audience, build relationships, and drive engagement across various platforms.",
+      "Implement tailored Enterprise Resource Planning systems to unify your business processes, data, and teams onto a single, efficient platform.",
     image: {
-      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop",
-      alt: "Smartphone showing social media app icons",
+      src: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop",
+      alt: "Team collaborating over data dashboards",
     },
   },
   {
-    slug: "email-marketing",
-    title: "Email Marketing",
+    slug: "software-rescue",
+    title: "Software Rescue",
     description:
-      "Nurture leads and drive conversions with our email marketing services, from newsletters to drip campaigns.",
+      "Struggling with a difficult software project? We specialize in diagnosing issues, rewriting code, and delivering a robust, functional product.",
     image: {
-      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop",
-      alt: "Laptop screen open to an email client",
+      src: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1600&auto=format&fit=crop",
+      alt: "Developers collaborating to solve a coding problem on a screen",
     },
   },
   {
-    slug: "analytics-reporting",
-    title: "Analytics and Reporting",
+    slug: "it-support-consultancy",
+    title: "IT Support & Consultancy",
     description:
-      "Gain valuable insights into your digital marketing performance with our analytics and reporting services.",
+      "Get reliable, ongoing IT support and strategic advice to optimize your technology stack, enhance security, and reduce downtime.",
     image: {
-      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop",
-      alt: "Laptop showing analytics charts and graphs",
-    },
-  },
-  {
-    slug: "conversion-rate-optimization",
-    title: "Conversion Rate Optimization (CRO)",
-    description:
-      "Maximize the effectiveness of your digital marketing efforts with our conversion rate optimization services.",
-    image: {
-      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop",
-      alt: "Person analyzing conversion data on laptop",
+      src: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=1600&auto=format&fit=crop",
+      alt: "IT consultant explaining network diagrams to a client",
     },
   },
 ];
 
-
 // Our process section content (services page)
 export const SERVICES_PROCESS_CONTENT = {
-  badge: "Our process",
-  heading: "How we work",
+  badge: "Our Process",
+  heading: "Our Collaborative Approach",
   description:
-    "We believe in taking a strategic and methodical approach to every project we undertake.",
+    "We believe in transparency and partnership. Our proven process ensures your project is delivered on time, on budget, and to the highest standard.",
   steps: [
     {
-      title: "Discovery",
+      title: "Discover & Strategize",
       description:
-        "We start by getting to know you and your business inside and out. We'll schedule a discovery call or meeting to discuss your goals, objectives, target audience, and unique challenges.",
+        "We dive deep into your business goals, challenges, and technical requirements to build a comprehensive project roadmap and strategy.",
     },
     {
-      title: "Strategy Development",
+      title: "Design & Architect",
       description:
-        "Next, we roll up our sleeves and dive into strategy development. Drawing on our expertise and industry insights, we'll develop a customized digital marketing strategy tailored to your specific needs and objectives.",
+        "Our architects and designers create the blueprint for your solution, focusing on user experience, technology stack, and scalable infrastructure.",
     },
     {
-      title: "Implementation",
+      title: "Develop & Implement",
       description:
-        "With a solid strategy in place, it's time to put our plan into action. Our team of experts will work diligently to execute the various components of your digital marketing campaign.",
+        "Using agile methodologies, we build your solution with precision, providing regular updates and demos for continuous feedback.",
     },
     {
-      title: "Continuous Improvement",
+      title: "Deploy & Scale",
       description:
-        "Finally, we believe in the power of continuous improvement. We'll work closely with you to gather feedback, assess results, and identify opportunities for growth and refinement.",
+        "We manage the full launch process and provide ongoing support, maintenance, and optimization to ensure long-term success and growth.",
     },
   ],
 } as const;
-
 
 export type ServiceDetailHeroContent = {
   badge: string;
@@ -187,41 +167,40 @@ export type ServiceDetail = {
 };
 
 export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
-  // Software & IT Services
   "web-development": {
     slug: "web-development",
     hero: {
       badge: "Service",
       title: { line1: "Web", line2: "Development" },
       description:
-        "We build secure, fast, and accessible websites and web apps tailored to your goals.",
+        "We build secure, fast, and scalable websites and web applications that deliver exceptional user experiences and drive measurable business results.",
       image: {
-        src: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1600&auto=format&fit=crop",
-        alt: "Developer working on responsive web design",
+        src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1615&auto=format&fit=crop",
+        alt: "Developer creating a modern web application",
       },
     },
     approach: {
-      introTitle: "Our Approach",
+      introTitle: "Our Development Process",
       introText:
-        "From discovery to deployment, we deliver robust web experiences that scale.",
+        "We combine cutting-edge technology with proven methodologies to deliver robust web solutions that grow with your business.",
       steps: [
-        { title: "Discovery", text: "Requirements, goals, and constraints alignment." },
-        { title: "Architecture", text: "Choose the right stack and system design." },
-        { title: "Implementation", text: "Iterative delivery with CI/CD and QA." },
-        { title: "Launch & Support", text: "Monitoring, analytics, and continuous improvement." },
+        { title: "Strategy & Planning", text: "We define project goals, scope, and key functionalities to create a detailed technical roadmap." },
+        { title: "UI/UX Design", text: "Our designers craft intuitive and engaging user interfaces that prioritize usability and conversion." },
+        { title: "Agile Development", text: "We build your product iteratively with modern frameworks, ensuring quality and flexibility." },
+        { title: "QA & Launch", text: "Rigorous testing and seamless deployment ensure a flawless launch and optimal performance." },
       ],
-      whyTitle: "Why choose us",
+      whyTitle: "Why Partner With Us",
       whyBullets: [
-        { title: "Performance", text: "Lighthouse-optimized and SEO-ready by default." },
-        { title: "Security", text: "Best practices from code to infrastructure." },
-        { title: "Reliability", text: "Test coverage and observability built-in." },
-        { title: "Partnership", text: "We iterate with you, not just for you." },
+        { title: "Performance-Driven", text: "We build fast-loading, SEO-friendly websites that rank higher and convert better." },
+        { title: "Security First", text: "From code to infrastructure, we implement best practices to protect your data and your users." },
+        { title: "Scalable Architecture", text: "We design solutions that can handle growth in users and functionality without costly reworks." },
+        { title: "Ongoing Partnership", text: "We provide support and evolution strategies to keep your digital assets ahead of the curve." },
       ],
       cta: {
-        title: "Ready to build?",
-        text: "Let's create something users love.",
-        primary: { label: "Start a project", href: "/contact" },
-        secondary: { label: "See more services", href: "/services" },
+        title: "Ready to Build Your Digital Presence?",
+        text: "Let's create a website that works as hard as you do.",
+        primary: { label: "Start a Project", href: "/contact" },
+        secondary: { label: "See All Services", href: "/services" },
       },
     },
   },
@@ -231,33 +210,33 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       badge: "Service",
       title: { line1: "Mobile App", line2: "Development" },
       description:
-        "Native and cross-platform apps focused on performance and delightful UX.",
+        "From concept to launch, we create beautiful, intuitive, and powerful mobile applications that users love and that deliver real business value.",
       image: {
         src: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1600&auto=format&fit=crop",
-        alt: "Mobile app UI design on smartphone",
+        alt: "A sleek mobile app interface on a phone",
       },
     },
     approach: {
-      introTitle: "Our Approach",
-      introText: "Product thinking meets solid engineering and QA.",
+      introTitle: "Our App Development Strategy",
+      introText: "We focus on user-centric design and robust engineering to create mobile experiences that stand out in a crowded marketplace.",
       steps: [
-        { title: "Research", text: "User journeys and market fit." },
-        { title: "Prototyping", text: "Validate quickly with prototypes." },
-        { title: "Build", text: "Iterate with analytics-driven insights." },
-        { title: "Ship & Iterate", text: "App Store/Play rollout and updates." },
+        { title: "Concept & Validation", text: "We help refine your idea, define core features, and validate market fit to ensure success." },
+        { title: "Native & Cross-Platform", text: "We choose the right technology (Native iOS/Android or Cross-Platform) for your budget and goals." },
+        { title: "Agile Development", text: "We develop in transparent sprints, allowing for regular feedback and prioritization of features." },
+        { title: "Store Deployment & ASO", text: "We handle the entire submission process and optimize listings for maximum visibility." },
       ],
-      whyTitle: "Why choose us",
+      whyTitle: "Why Choose Us for Your App",
       whyBullets: [
-        { title: "UX-first", text: "Design systems and accessibility included." },
-        { title: "Cross-platform", text: "One codebase, native performance." },
-        { title: "Observability", text: "Crash analytics and monitoring." },
-        { title: "Support", text: "We scale with your roadmap." },
+        { title: "User-Focused Design", text: "We create apps with stunning UX/UI that drive engagement and retention." },
+        { title: "Performance Engineering", text: "We optimize for speed and smooth operation, even under heavy load or offline." },
+        { title: "Data-Driven Insights", text: "We integrate analytics to track performance and inform future development cycles." },
+        { title: "End-to-End Service", text: "From initial idea to post-launch updates, we are your single partner for mobile success." },
       ],
       cta: {
-        title: "Build your app",
-        text: "Turn your idea into a loved product.",
-        primary: { label: "Talk to us", href: "/contact" },
-        secondary: { label: "All services", href: "/services" },
+        title: "Have a Game-Changing App Idea?",
+        text: "Let's turn your vision into a downloadable reality.",
+        primary: { label: "Discuss Your App", href: "/contact" },
+        secondary: { label: "View Our Work", href: "/portfolio" },
       },
     },
   },
@@ -267,33 +246,33 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       badge: "Service",
       title: { line1: "ERP", line2: "Solutions" },
       description:
-        "Tailored ERP to streamline operations, improve visibility, and drive decisions.",
+        "Tailored ERP systems to streamline operations, improve visibility, and drive data-informed decisions across your organization.",
       image: {
         src: "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop",
-        alt: "Dashboard with operational KPIs",
+        alt: "Dashboard showing business analytics and KPIs",
       },
     },
     approach: {
-      introTitle: "Our Approach",
-      introText: "Process-first implementation with change management.",
+      introTitle: "Our Implementation Approach",
+      introText: "We take a process-first approach to ERP implementation, ensuring the system fits your business like a glove.",
       steps: [
-        { title: "Process Mapping", text: "Understand and document workflows." },
-        { title: "Customization", text: "Fit the tool to your business." },
-        { title: "Integration", text: "Connect your data sources securely." },
-        { title: "Enablement", text: "Training and playbooks for teams." },
+        { title: "Business Process Analysis", text: "We map your current workflows and identify opportunities for optimization and automation." },
+        { title: "Solution Design", text: "We configure and customize the ERP platform to match your specific business requirements." },
+        { title: "Data Migration", text: "We securely transfer your existing data into the new system with integrity checks and validation." },
+        { title: "Training & Enablement", text: "We provide comprehensive training and documentation to ensure smooth adoption across your team." },
       ],
-      whyTitle: "Why choose us",
+      whyTitle: "Why Our ERP Solutions Stand Out",
       whyBullets: [
-        { title: "ROI", text: "Faster time-to-value with measurable outcomes." },
-        { title: "Scalability", text: "Grow without replatforming." },
-        { title: "Compliance", text: "Data governance and auditability." },
-        { title: "Support", text: "Ongoing optimizations as needs evolve." },
+        { title: "Industry Expertise", text: "We understand the unique challenges and opportunities within your specific sector." },
+        { title: "Customization Capabilities", text: "We tailor the ERP to your processes, not the other way around." },
+        { title: "Integration Proficiency", text: "We seamlessly connect your ERP with existing software ecosystems for unified operations." },
+        { title: "Ongoing Optimization", text: "We provide continuous support and system enhancements as your business evolves." },
       ],
       cta: {
-        title: "Optimize operations",
-        text: "Empower teams with the right system.",
-        primary: { label: "Discuss ERP", href: "/contact" },
-        secondary: { label: "Explore services", href: "/services" },
+        title: "Ready to Streamline Your Operations?",
+        text: "Let's implement an ERP solution that grows with your business.",
+        primary: { label: "Discuss ERP Options", href: "/contact" },
+        secondary: { label: "See All Services", href: "/services" },
       },
     },
   },
@@ -303,33 +282,33 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       badge: "Service",
       title: { line1: "Software", line2: "Rescue" },
       description:
-        "Revive projects with audits, refactors, and targeted fixes to ship reliably.",
+        "Revive troubled projects with our expert intervention. We diagnose issues, refactor code, and deliver quality solutions that save time and resources.",
       image: {
-        src: "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?q=80&w=1600&auto=format&fit=crop",
-        alt: "Engineer debugging code",
+        src: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1600&auto=format&fit=crop",
+        alt: "Team collaborating to solve complex software problems",
       },
     },
     approach: {
-      introTitle: "Our Approach",
-      introText: "Stabilize, optimize, and deliver with confidence.",
+      introTitle: "Our Rescue Process",
+      introText: "We systematically assess, stabilize, and improve struggling software projects to get them back on track.",
       steps: [
-        { title: "Audit", text: "Identify root causes across stack and process." },
-        { title: "Prioritize", text: "Address highest-impact issues first." },
-        { title: "Refactor", text: "Improve architecture and test coverage." },
-        { title: "Handover", text: "Docs and metrics for long-term health." },
+        { title: "Comprehensive Audit", text: "We conduct a thorough analysis of code quality, architecture, and project documentation." },
+        { title: "Issue Prioritization", text: "We identify critical problems and create a phased plan for addressing them efficiently." },
+        { title: "Code Refactoring", text: "We improve code structure, implement best practices, and enhance maintainability." },
+        { title: "Testing & Quality Assurance", text: "We implement robust testing protocols to ensure stability and prevent future issues." },
       ],
-      whyTitle: "Why choose us",
+      whyTitle: "Why Choose Our Rescue Services",
       whyBullets: [
-        { title: "Experience", text: "Rescued dozens of complex systems." },
-        { title: "Transparency", text: "Clear plans and weekly outcomes." },
-        { title: "Quality", text: "Automated tests and CI gates." },
-        { title: "Speed", text: "Fast stabilization without shortcuts." },
+        { title: "Proven Track Record", text: "We've successfully rescued dozens of projects across various industries and technologies." },
+        { title: "Transparent Communication", text: "We provide clear assessments, regular updates, and realistic timelines throughout the process." },
+        { title: "Technical Expertise", text: "Our team possesses deep knowledge across multiple programming languages and frameworks." },
+        { title: "Business Focus", text: "We align technical solutions with your business objectives to ensure maximum ROI." },
       ],
       cta: {
-        title: "Get back on track",
-        text: "We turn chaos into clarity.",
-        primary: { label: "Request audit", href: "/contact" },
-        secondary: { label: "More services", href: "/services" },
+        title: "Need to Rescue a Project?",
+        text: "Let's diagnose your challenges and create a recovery plan together.",
+        primary: { label: "Request Project Audit", href: "/contact" },
+        secondary: { label: "View Case Studies", href: "/case-studies" },
       },
     },
   },
@@ -339,292 +318,34 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       badge: "Service",
       title: { line1: "IT Support &", line2: "Consultancy" },
       description:
-        "Proactive support and strategic guidance to keep systems secure and efficient.",
+        "Proactive IT management and strategic guidance to keep your systems secure, efficient, and perfectly aligned with your business objectives.",
       image: {
-        src: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop",
-        alt: "Team discussing IT infrastructure",
+        src: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=1600&auto=format&fit=crop",
+        alt: "IT consultant discussing technology strategy with clients",
       },
     },
     approach: {
-      introTitle: "Our Approach",
-      introText: "Reliability, security, and cost-efficiency at the core.",
+      introTitle: "Our Support Methodology",
+      introText: "We provide comprehensive IT services that keep your operations running smoothly while planning for future growth.",
       steps: [
-        { title: "Assessment", text: "Baseline health and risk review." },
-        { title: "Roadmap", text: "Prioritized improvements and KPIs." },
-        { title: "Execution", text: "Managed services and automation." },
-        { title: "Review", text: "Quarterly reviews and tuning." },
+        { title: "Infrastructure Assessment", text: "We evaluate your current IT environment to identify strengths, weaknesses, and opportunities." },
+        { title: "Strategic Roadmapping", text: "We develop a customized technology plan aligned with your short and long-term business goals." },
+        { title: "Proactive Monitoring", text: "We implement 24/7 monitoring solutions to detect and resolve issues before they impact your business." },
+        { title: "Continuous Optimization", text: "We regularly review and enhance your systems to improve performance, security, and cost-efficiency." },
       ],
-      whyTitle: "Why choose us",
+      whyTitle: "Why Partner With Us for IT",
       whyBullets: [
-        { title: "Security", text: "Zero-trust and best practices." },
-        { title: "Uptime", text: "SLA-backed reliability." },
-        { title: "Savings", text: "Optimize spend without tradeoffs." },
-        { title: "Coverage", text: "24/7 support options available." },
+        { title: "Proactive Approach", text: "We prevent problems before they occur, minimizing downtime and maximizing productivity." },
+        { title: "Security Expertise", text: "We implement multi-layered security measures to protect your data and infrastructure from threats." },
+        { title: "Strategic Guidance", text: "We help you make informed technology decisions that support business growth and innovation." },
+        { title: "Scalable Solutions", text: "Our services grow with your business, providing the right level of support at each stage." },
       ],
       cta: {
-        title: "Stabilize IT",
-        text: "Modernize and secure your stack.",
-        primary: { label: "Talk to experts", href: "/contact" },
-        secondary: { label: "See services", href: "/services" },
-      },
-    },
-  },
-  "business-solutions": {
-    slug: "business-solutions",
-    hero: {
-      badge: "Service",
-      title: { line1: "Business", line2: "Solutions" },
-      description:
-        "Tailored systems and analytics to unlock growth and operational excellence.",
-      image: {
-        src: "https://images.unsplash.com/photo-1551847677-dc82d764e1df?q=80&w=1600&auto=format&fit=crop",
-        alt: "Business team reviewing analytics",
-      },
-    },
-    approach: {
-      introTitle: "Our Approach",
-      introText: "Strategy-led implementations with measurable outcomes.",
-      steps: [
-        { title: "Discovery", text: "Define goals and key metrics." },
-        { title: "Solution Design", text: "Pick tools and data flows." },
-        { title: "Implementation", text: "Deliver incrementally with feedback." },
-        { title: "Scale", text: "Automate and optimize continuously." },
-      ],
-      whyTitle: "Why choose us",
-      whyBullets: [
-        { title: "Impact", text: "Focus on business outcomes." },
-        { title: "Clarity", text: "Transparent execution and reports." },
-        { title: "Expertise", text: "Domain and technical depth." },
-        { title: "Longevity", text: "We design for tomorrow." },
-      ],
-      cta: {
-        title: "Unlock growth",
-        text: "Let's build a competitive edge.",
-        primary: { label: "Contact sales", href: "/contact" },
-        secondary: { label: "Explore services", href: "/services" },
-      },
-    },
-  },
-  // Digital Marketing Services
-  seo: {
-    slug: "seo",
-    hero: {
-      badge: "Service",
-      title: { line1: "Search Engine", line2: "Optimization (SEO)" },
-      description:
-        "Climb rankings, outrank competitors, and attract qualified leads with comprehensive SEO.",
-      image: {
-        src: "https://images.unsplash.com/photo-1551281044-8d8d276e8b53?q=80&w=1600&auto=format&fit=crop",
-        alt: "SEO dashboard showing clicks, impressions, CTR, and position",
-      },
-    },
-    approach: {
-      introTitle: "Our Approach",
-      introText:
-        "Data-driven insights, strategic planning, and continuous optimization.",
-      steps: [
-        { title: "Audit", text: "Technical, on-page, and UX review." },
-        { title: "Keyword Research", text: "Find the terms that convert." },
-        { title: "On-Page Optimization", text: "Meta, headers, content, linking." },
-        { title: "Content Strategy", text: "Editorial plan to win intent." },
-        { title: "Link Building", text: "Earn authoritative backlinks." },
-        { title: "Local SEO", text: "Optimize for local packs and maps." },
-        { title: "Ongoing Optimization", text: "Measure and iterate." },
-      ],
-      whyTitle: "Why Choose Us",
-      whyBullets: [
-        { title: "Track Record", text: "Proven lifts in traffic and revenue." },
-        { title: "Custom", text: "No one-size-fits-all playbooks." },
-        { title: "Transparent", text: "Clear reporting and insights." },
-        { title: "Support", text: "Dedicated experts by your side." },
-      ],
-      cta: {
-        title: "Boost organic growth",
-        text: "See how SEO can move your KPIs.",
-        primary: { label: "Get started", href: "/contact" },
-        secondary: { label: "See all services", href: "/services" },
-      },
-    },
-  },
-  "content-marketing": {
-    slug: "content-marketing",
-    hero: {
-      badge: "Service",
-      title: { line1: "Content", line2: "Marketing" },
-      description:
-        "Plan, produce, and distribute content that builds trust and drives demand.",
-      image: {
-        src: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1600&auto=format&fit=crop",
-        alt: "Content planning on a desk",
-      },
-    },
-    approach: {
-      introTitle: "Our Approach",
-      introText: "Editorial calendars backed by research and analytics.",
-      steps: [
-        { title: "Strategy", text: "Define personas and content pillars." },
-        { title: "Production", text: "Create high-quality, optimized assets." },
-        { title: "Distribution", text: "Promote across owned and paid channels." },
-        { title: "Measurement", text: "Attribute impact on pipeline and revenue." },
-      ],
-      whyTitle: "Why choose us",
-      whyBullets: [
-        { title: "Quality", text: "Expert writers and editors." },
-        { title: "SEO Aligned", text: "Content that ranks and converts." },
-        { title: "Consistent", text: "Reliable cadence and governance." },
-        { title: "Full-funnel", text: "Awareness to retention." },
-      ],
-      cta: {
-        title: "Scale content",
-        text: "Let's build your content engine.",
-        primary: { label: "Talk to content lead", href: "/contact" },
-        secondary: { label: "All services", href: "/services" },
-      },
-    },
-  },
-  "social-media-marketing": {
-    slug: "social-media-marketing",
-    hero: {
-      badge: "Service",
-      title: { line1: "Social Media", line2: "Marketing" },
-      description:
-        "Build relationships and drive engagement across the platforms your audience loves.",
-      image: {
-        src: "https://images.unsplash.com/photo-1517260911058-0fcfd733702f?q=80&w=1600&auto=format&fit=crop",
-        alt: "Social media icons and engagement metrics",
-      },
-    },
-    approach: {
-      introTitle: "Our Approach",
-      introText: "Storytelling meets analytics for compounding reach.",
-      steps: [
-        { title: "Audit", text: "Baseline presence and competitors." },
-        { title: "Playbook", text: "Voice, tone, and content themes." },
-        { title: "Execution", text: "Publishing, community, and creators." },
-        { title: "Optimize", text: "Test creative and formats continuously." },
-      ],
-      whyTitle: "Why choose us",
-      whyBullets: [
-        { title: "Creativity", text: "On-brand, scroll-stopping content." },
-        { title: "Pace", text: "Ship fast, learn faster." },
-        { title: "Insights", text: "What works is what scales." },
-        { title: "Coverage", text: "From strategy to moderation." },
-      ],
-      cta: {
-        title: "Grow your audience",
-        text: "Make social a growth lever.",
-        primary: { label: "Plan a campaign", href: "/contact" },
-        secondary: { label: "See services", href: "/services" },
-      },
-    },
-  },
-  "email-marketing": {
-    slug: "email-marketing",
-    hero: {
-      badge: "Service",
-      title: { line1: "Email", line2: "Marketing" },
-      description:
-        "Lifecycle programs and newsletters that nurture, convert, and retain.",
-      image: {
-        src: "https://images.unsplash.com/photo-1494336956603-39a2e6ffd468?q=80&w=1600&auto=format&fit=crop",
-        alt: "Email campaign dashboards",
-      },
-    },
-    approach: {
-      introTitle: "Our Approach",
-      introText: "Right message, right person, right time.",
-      steps: [
-        { title: "Segmentation", text: "Data-driven audience building." },
-        { title: "Automation", text: "Flows for lifecycle moments." },
-        { title: "Creative", text: "Copy and design that converts." },
-        { title: "Growth", text: "List growth that respects consent." },
-      ],
-      whyTitle: "Why choose us",
-      whyBullets: [
-        { title: "Deliverability", text: "Keep your domain reputation high." },
-        { title: "Personalization", text: "Dynamic content at scale." },
-        { title: "Attribution", text: "Tie emails to revenue." },
-        { title: "Tooling", text: "ESP-agnostic expertise." },
-      ],
-      cta: {
-        title: "Upgrade email",
-        text: "Turn inbox into impact.",
-        primary: { label: "Design my flows", href: "/contact" },
-        secondary: { label: "All services", href: "/services" },
-      },
-    },
-  },
-  "analytics-reporting": {
-    slug: "analytics-reporting",
-    hero: {
-      badge: "Service",
-      title: { line1: "Analytics &", line2: "Reporting" },
-      description:
-        "Measure what matters and make decisions with confidence.",
-      image: {
-        src: "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1600&auto=format&fit=crop",
-        alt: "Analytics dashboards and charts",
-      },
-    },
-    approach: {
-      introTitle: "Our Approach",
-      introText: "From event design to executive dashboards.",
-      steps: [
-        { title: "Instrumentation", text: "Define events and taxonomy." },
-        { title: "Pipelines", text: "Clean, reliable data flows." },
-        { title: "Dashboards", text: "Insights for every level." },
-        { title: "Optimization", text: "Experimentation and learning." },
-      ],
-      whyTitle: "Why choose us",
-      whyBullets: [
-        { title: "Accuracy", text: "Trust your numbers." },
-        { title: "Actionable", text: "Insights, not noise." },
-        { title: "Speed", text: "Fast time-to-insight." },
-        { title: "Enablement", text: "Train teams to self-serve." },
-      ],
-      cta: {
-        title: "See clearly",
-        text: "Turn data into growth.",
-        primary: { label: "Talk analytics", href: "/contact" },
-        secondary: { label: "More services", href: "/services" },
-      },
-    },
-  },
-  "conversion-rate-optimization": {
-    slug: "conversion-rate-optimization",
-    hero: {
-      badge: "Service",
-      title: { line1: "Conversion Rate", line2: "Optimization (CRO)" },
-      description:
-        "Increase conversions with experimentation, UX improvements, and performance wins.",
-      image: {
-        src: "https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1600&auto=format&fit=crop",
-        alt: "A/B testing results dashboard",
-      },
-    },
-    approach: {
-      introTitle: "Our Approach",
-      introText: "Evidence-based testing and UX science.",
-      steps: [
-        { title: "Research", text: "Identify friction and hypotheses." },
-        { title: "Experiment", text: "A/B and multivariate testing." },
-        { title: "Implement", text: "Rollout winning variations." },
-        { title: "Scale", text: "Build a culture of experimentation." },
-      ],
-      whyTitle: "Why choose us",
-      whyBullets: [
-        { title: "Impact", text: "Lift conversion and revenue." },
-        { title: "Rigor", text: "Statistically sound methods." },
-        { title: "Speed", text: "From hypothesis to result quickly." },
-        { title: "Holistic", text: "CRO + performance + UX." },
-      ],
-      cta: {
-        title: "Lift conversions",
-        text: "Let's find the wins.",
-        primary: { label: "Start optimizing", href: "/contact" },
-        secondary: { label: "All services", href: "/services" },
+        title: "Ready to Optimize Your IT Infrastructure?",
+        text: "Let's create a technology environment that empowers your business.",
+        primary: { label: "Schedule Consultation", href: "/contact" },
+        secondary: { label: "Explore Services", href: "/services" },
       },
     },
   },
 } as const;
-

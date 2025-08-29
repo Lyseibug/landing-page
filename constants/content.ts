@@ -144,11 +144,11 @@ export const FOOTER_CONTENT = {
     {
       title: "Our services",
       links: [
-        { label: "Web Development", href: "#services" },
-        { label: "Mobile App Development", href: "#services" },
-        { label: "ERP Solutions", href: "#services" },
-        { label: "Software Rescue", href: "#services" },
-        { label: "IT Support & Consultancy", href: "#services" },
+        { label: "Web Development", href: "/services/web-development" },
+        { label: "Mobile App Development", href: "/services/mobile-app-development" },
+        { label: "ERP Solutions", href: "/services/erp-solutions" },
+        { label: "Software Rescue", href: "/services/software-rescue" },
+        { label: "IT Support & Consultancy", href: "/services/it-support-consultancy" },
       ],
     },
   ],
