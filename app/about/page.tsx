@@ -11,7 +11,7 @@ export default function AboutPage() {
       <AboutHero />
       <VisionMission />
       <WhyUs />
-      <CaseStudies />
+      {/* <CaseStudies /> */}
       <CTA />
     </>
   );

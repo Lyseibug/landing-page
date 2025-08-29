@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
-import CaseStudies from "@/components/CaseStudies";
+// import CaseStudies from "@/components/CaseStudies";
 import CTA from "@/components/CTA";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
       <About />
       <Services />
       <WhyUs />
-      <CaseStudies />
+      {/* <CaseStudies /> */}
       <CTA />
     </>
   );

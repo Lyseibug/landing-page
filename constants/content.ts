@@ -3,11 +3,11 @@ export type NavItem = { label: string; href: string };
 export const BRAND_NAME = "Lyseibug";
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: "Home", href: "#home" },
+  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Case studies", href: "#cases" },
-  { label: "Contact", href: "#contact" },
+  // { label: "Case studies", href: "/cases" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const NAV_TEXT = {
@@ -16,15 +16,6 @@ export const NAV_TEXT = {
   toggleAriaLabel: "Toggle menu",
 };
 
-// Home page specific content moved to constants/home.ts
-
-// About page specific content moved to constants/about.ts
-
-// About page specific content moved to constants/about.ts
-
-// About page specific content moved to constants/about.ts
-
-// Services page specific content moved to constants/services.ts
 
 export const WHY_US_CONTENT = {
   badge: "Why choose us",
@@ -135,13 +126,11 @@ export const FOOTER_CONTENT = {
     {
       title: "Pages",
       links: [
-        { label: "Home", href: "#home" },
-        { label: "About", href: "#about" },
-        { label: "Services", href: "#services" },
-        { label: "Pricing", href: "#pricing" },
-        { label: "Case studies", href: "#cases" },
-        { label: "Blog", href: "#blog" },
-        { label: "Contact", href: "#contact" },
+        { label: "Home", href: "/" },
+        { label: "About", href: "/about" },
+        { label: "Services", href: "/services" },
+        // { label: "Case studies", href: "/cases" },
+        { label: "Contact", href: "/contact" },
       ],
     },
     {

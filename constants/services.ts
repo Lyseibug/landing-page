@@ -1,5 +1,17 @@
 export type ServiceText = { title: string; description: string };
 
+export const SERVICES_HERO_CONTENT = {
+  badge: "Our services",
+  headline: {
+    pre: "Empower your",
+    highlight: "growth",
+    post: "with our",
+    line2: "various services",
+  },
+  description:
+    "we offer a comprehensive suite of digital marketing services designed to help businesses thrive in today's competitive online landscape.",
+} as const;
+
 export const SERVICES_CONTENT = {
   badge: "Our services",
   heading: "What We Offer",
