@@ -4,7 +4,7 @@ export const BRAND_NAME = "Lyseibug";
 
 export const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
+  { label: "About", href: "/about" },
   { label: "Services", href: "#services" },
   { label: "Case studies", href: "#cases" },
   { label: "Contact", href: "#contact" },
@@ -41,12 +41,28 @@ export const HERO_CONTENT = {
   },
 } as const;
 
+export const ABOUT_HERO_CONTENT = {
+  badge: "About us",
+  headline: {
+    pre: "Your trusted",
+    highlight: "partner",
+    post: "for growing",
+    line2: "your business",
+  },
+  description:
+    "Welcome to Lyseibug, we're here to help you achieve your business goals and take your brand to new heights in the digital landscape.",
+  image: {
+    src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/about-us.webp",
+    alt: "Team celebrating around a laptop",
+  },
+} as const;
+
 export const ABOUT_CONTENT = {
   badge: "About us",
   heading: "Welcome to Lyseibug",
   description:
     "We are a technology-driven software agency dedicated to transforming business ideas into powerful digital solutions. From startups to enterprises, we craft tailored applications that boost efficiency, scalability, and customer satisfaction.",
-  cta: { label: "More about us", href: "#about" },
+  cta: { label: "More about us", href: "/about" },
   image: {
     src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/about-us.webp",
     alt: "Developers collaborating on software projects",
