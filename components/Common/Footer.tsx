@@ -1,14 +1,27 @@
 import { BRAND_NAME, FOOTER_CONTENT } from "@/constants/content";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faLinkedin, faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import {
+  faXTwitter,
+  faLinkedin,
+  faInstagram,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 import type { ReactNode } from "react";
 
 const socialIconMap: Record<string, ReactNode> = {
-  Twitter: <FontAwesomeIcon icon={faTwitter} className="h-4 w-4" aria-hidden />,
-  LinkedIn: <FontAwesomeIcon icon={faLinkedin} className="h-4 w-4" aria-hidden />,
-  Instagram: <FontAwesomeIcon icon={faInstagram} className="h-4 w-4" aria-hidden />,
-  Facebook: <FontAwesomeIcon icon={faFacebook} className="h-4 w-4" aria-hidden />,
+  Twitter: (
+    <FontAwesomeIcon icon={faXTwitter} className="h-4 w-4" aria-hidden />
+  ),
+  LinkedIn: (
+    <FontAwesomeIcon icon={faLinkedin} className="h-4 w-4" aria-hidden />
+  ),
+  Instagram: (
+    <FontAwesomeIcon icon={faInstagram} className="h-4 w-4" aria-hidden />
+  ),
+  Facebook: (
+    <FontAwesomeIcon icon={faFacebook} className="h-4 w-4" aria-hidden />
+  ),
 };
 
 export default function Footer() {
@@ -26,9 +39,11 @@ export default function Footer() {
               <div>{FOOTER_CONTENT.contact.email}</div>
               <div>{FOOTER_CONTENT.contact.phone}</div>
               <div>
-                {FOOTER_CONTENT.contact.addressLines.map((line) => (
-                  <div key={line}>{line}</div>
-                ))}
+                {FOOTER_CONTENT.contact.addressLines.map((line) => {
+                  return (
+                    <div key={line}>{line}</div>
+                  );
+                })}
               </div>
             </div>
             <div className="mt-5 flex items-center justify-center gap-4 md:justify-start">
