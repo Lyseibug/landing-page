@@ -26,8 +26,12 @@ function NumberBadge({ index }: { index: number }) {
 function StepCard({ step }: { step: Step }) {
   return (
     <div className="w-full max-w-2xl rounded-2xl border border-indigo-900 bg-white p-6 shadow-sm md:p-8">
-      <h3 className="text-lg font-semibold text-indigo-900 md:text-xl">{step.title}</h3>
-      <p className="mt-2 text-sm leading-6 text-slate-600 md:text-base">{step.description}</p>
+      <h3 className="text-lg font-semibold text-indigo-900 md:text-xl">
+        {step.title}
+      </h3>
+      <p className="mt-2 text-sm leading-6 text-slate-600 md:text-base">
+        {step.description}
+      </p>
     </div>
   );
 }
@@ -70,16 +74,29 @@ export default function ServicesProcess() {
                 </div>
 
                 {/* Desktop layout: alternating number left/right */}
-                <div className={`hidden items-center gap-10 md:flex ${isEven ? "justify-between" : "justify-between"}`}>
-                  {isEven ? <div className="invisible w-28" /> : <NumberBadge index={idx + 1} />}
-                  <div className={`flex flex-1 ${isEven ? "justify-end" : "justify-start"}`}>
+                <div
+                  className={`hidden items-center gap-10 md:flex ${
+                    isEven ? "justify-between" : "justify-between"
+                  }`}
+                >
+                  {isEven ? (
+                    <div className="invisible w-28" />
+                  ) : (
+                    <NumberBadge index={idx + 1} />
+                  )}
+                  <div
+                    className={`flex flex-1 ${
+                      isEven ? "justify-end" : "justify-start"
+                    }`}
+                  >
                     <StepCard step={step} />
                   </div>
-                  {isEven ? <NumberBadge index={idx + 1} /> : <div className="invisible w-28" />}
+                  {isEven ? (
+                    <NumberBadge index={idx + 1} />
+                  ) : (
+                    <div className="invisible w-28" />
+                  )}
                 </div>
-                {idx < steps.length - 1 && (
-                  <div className="mt-12 h-px w-full bg-gray-200/80 md:mt-16" />
-                )}
               </div>
             );
           })}
@@ -88,5 +105,3 @@ export default function ServicesProcess() {
     </section>
   );
 }
-
-
