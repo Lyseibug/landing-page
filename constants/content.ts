@@ -5,7 +5,7 @@ export const BRAND_NAME = "Lyseibug";
 export const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "#home" },
   { label: "About", href: "/about" },
-  { label: "Services", href: "#services" },
+  { label: "Services", href: "/services" },
   { label: "Case studies", href: "#cases" },
   { label: "Contact", href: "#contact" },
 ];
@@ -133,7 +133,7 @@ export const SERVICES_CONTENT = {
 
   ] as ServiceText[],
   moreDetailsLabel: "More details",
-  viewAll: { label: "View all services", href: "#services" },
+  viewAll: { label: "View all services", href: "/services" },
 } as const;
 
 export const WHY_US_CONTENT = {
