@@ -3,13 +3,13 @@ export type ServiceText = { slug: string; title: string; description: string };
 export const SERVICES_HERO_CONTENT = {
   badge: "Our Services",
   headline: {
-    pre: "Transform your",
-    highlight: "business",
-    post: "with our expert",
-    line2: "software solutions",
+    pre: "Results-driven",
+    highlight: "software development",
+    post: "and IT consulting",
+    line2: "for modern businesses",
   },
   description:
-    "We provide end-to-end software development and IT services designed to solve complex challenges, drive efficiency, and accelerate your digital growth.",
+    "End-to-end software development and IT services to solve complex challenges, improve efficiency, and accelerate digital growth—with measurable ROI.",
 } as const;
 
 export const SERVICES_CONTENT = {
@@ -22,31 +22,31 @@ export const SERVICES_CONTENT = {
       slug: "web-development",
       title: "Web Development",
       description:
-        "Custom, high-performance websites and web applications built for user engagement, security, and scalability to achieve your business objectives.",
+        "Custom web development for fast, secure, and SEO-friendly websites and web apps that increase conversions and scale with your business.",
     },
     {
       slug: "mobile-app-development",
       title: "Mobile App Development",
       description:
-        "Native and cross-platform mobile apps engineered for exceptional user experience, performance, and market success on iOS and Android.",
+        "Native and cross‑platform mobile app development delivering top UX, performance, and market success across iOS and Android.",
     },
     {
       slug: "erp-solutions",
       title: "ERP Solutions",
       description:
-        "Integrated ERP systems that streamline your operations, centralize data, and provide actionable insights to improve productivity and decision-making.",
+        "Tailored ERP solutions that streamline operations, centralize data, and provide real‑time insights to improve productivity and decision‑making.",
     },
     {
       slug: "software-rescue",
       title: "Software Rescue",
       description:
-        "Get stalled or problematic software projects back on track. We audit, refactor, and deliver quality code to save you time and resources.",
+        "Software rescue services to fix failing projects—code audits, refactoring, and delivery to restore quality, speed, and reliability.",
     },
     {
       slug: "it-support-consultancy",
       title: "IT Support & Consultancy",
       description:
-        "Proactive IT management and strategic consulting to ensure your infrastructure is secure, efficient, and aligned with your business goals.",
+        "Proactive IT support and technology consulting to secure your infrastructure, reduce downtime, and align IT with business goals.",
     },
   ] as ServiceText[],
   moreDetailsLabel: "Explore service",
@@ -173,7 +173,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       badge: "Service",
       title: { line1: "Web", line2: "Development" },
       description:
-        "We build secure, fast, and scalable websites and web applications that deliver exceptional user experiences and drive measurable business results.",
+        "We build fast, secure, and SEO-optimized websites and web applications that improve Core Web Vitals, boost conversions, and drive measurable business results.",
       image: {
         src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1615&auto=format&fit=crop",
         alt: "Developer creating a modern web application",
@@ -191,7 +191,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       ],
       whyTitle: "Why Partner With Us",
       whyBullets: [
-        { title: "Performance-Driven", text: "We build fast-loading, SEO-friendly websites that rank higher and convert better." },
+        { title: "Performance-Driven", text: "We optimize for Core Web Vitals and page speed to rank higher and convert better." },
         { title: "Security First", text: "From code to infrastructure, we implement best practices to protect your data and your users." },
         { title: "Scalable Architecture", text: "We design solutions that can handle growth in users and functionality without costly reworks." },
         { title: "Ongoing Partnership", text: "We provide support and evolution strategies to keep your digital assets ahead of the curve." },
@@ -210,7 +210,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       badge: "Service",
       title: { line1: "Mobile App", line2: "Development" },
       description:
-        "From concept to launch, we create beautiful, intuitive, and powerful mobile applications that users love and that deliver real business value.",
+        "From concept to launch, we create intuitive, high‑performance iOS and Android apps that users love—accelerating time‑to‑market and business growth.",
       image: {
         src: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1600&auto=format&fit=crop",
         alt: "A sleek mobile app interface on a phone",
@@ -227,9 +227,9 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       ],
       whyTitle: "Why Choose Us for Your App",
       whyBullets: [
-        { title: "User-Focused Design", text: "We create apps with stunning UX/UI that drive engagement and retention." },
+        { title: "User-Focused Design", text: "We craft UX/UI that increases activation, engagement, and retention." },
         { title: "Performance Engineering", text: "We optimize for speed and smooth operation, even under heavy load or offline." },
-        { title: "Data-Driven Insights", text: "We integrate analytics to track performance and inform future development cycles." },
+        { title: "Data-Driven Insights", text: "Built-in analytics inform roadmap decisions and continuous optimization." },
         { title: "End-to-End Service", text: "From initial idea to post-launch updates, we are your single partner for mobile success." },
       ],
       cta: {
@@ -246,7 +246,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       badge: "Service",
       title: { line1: "ERP", line2: "Solutions" },
       description:
-        "Tailored ERP systems to streamline operations, improve visibility, and drive data-informed decisions across your organization.",
+        "Tailored ERP systems that streamline operations, reduce costs, improve visibility, and enable data‑driven decisions across your organization.",
       image: {
         src: "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop",
         alt: "Dashboard showing business analytics and KPIs",
@@ -264,9 +264,9 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       whyTitle: "Why Our ERP Solutions Stand Out",
       whyBullets: [
         { title: "Industry Expertise", text: "We understand the unique challenges and opportunities within your specific sector." },
-        { title: "Customization Capabilities", text: "We tailor the ERP to your processes, not the other way around." },
+        { title: "Customization Capabilities", text: "We tailor the ERP to your processes—not the other way around." },
         { title: "Integration Proficiency", text: "We seamlessly connect your ERP with existing software ecosystems for unified operations." },
-        { title: "Ongoing Optimization", text: "We provide continuous support and system enhancements as your business evolves." },
+        { title: "Ongoing Optimization", text: "We provide continuous support, reporting, and enhancements as your business evolves." },
       ],
       cta: {
         title: "Ready to Streamline Your Operations?",
@@ -282,7 +282,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       badge: "Service",
       title: { line1: "Software", line2: "Rescue" },
       description:
-        "Revive troubled projects with our expert intervention. We diagnose issues, refactor code, and deliver quality solutions that save time and resources.",
+        "Revive troubled projects with expert intervention. We audit, stabilize, and modernize legacy code, refactor architecture, and deliver reliable, maintainable software—fast.",
       image: {
         src: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1600&auto=format&fit=crop",
         alt: "Team collaborating to solve complex software problems",
@@ -300,9 +300,9 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       whyTitle: "Why Choose Our Rescue Services",
       whyBullets: [
         { title: "Proven Track Record", text: "We've successfully rescued dozens of projects across various industries and technologies." },
-        { title: "Transparent Communication", text: "We provide clear assessments, regular updates, and realistic timelines throughout the process." },
+        { title: "Transparent Communication", text: "Clear assessments, weekly updates, and realistic timelines keep stakeholders aligned." },
         { title: "Technical Expertise", text: "Our team possesses deep knowledge across multiple programming languages and frameworks." },
-        { title: "Business Focus", text: "We align technical solutions with your business objectives to ensure maximum ROI." },
+        { title: "Business Focus", text: "We align technical work with business objectives to maximize ROI and reduce risk." },
       ],
       cta: {
         title: "Need to Rescue a Project?",
@@ -318,7 +318,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       badge: "Service",
       title: { line1: "IT Support &", line2: "Consultancy" },
       description:
-        "Proactive IT management and strategic guidance to keep your systems secure, efficient, and perfectly aligned with your business objectives.",
+        "Proactive IT support and strategic consulting to keep systems secure, compliant, and efficient—reducing downtime and total cost of ownership.",
       image: {
         src: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=1600&auto=format&fit=crop",
         alt: "IT consultant discussing technology strategy with clients",
@@ -335,10 +335,10 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       ],
       whyTitle: "Why Partner With Us for IT",
       whyBullets: [
-        { title: "Proactive Approach", text: "We prevent problems before they occur, minimizing downtime and maximizing productivity." },
-        { title: "Security Expertise", text: "We implement multi-layered security measures to protect your data and infrastructure from threats." },
-        { title: "Strategic Guidance", text: "We help you make informed technology decisions that support business growth and innovation." },
-        { title: "Scalable Solutions", text: "Our services grow with your business, providing the right level of support at each stage." },
+        { title: "Proactive Approach", text: "24/7 monitoring and alerts prevent issues before they impact your business." },
+        { title: "Security Expertise", text: "Multi-layered security and compliance best practices protect your data and infrastructure." },
+        { title: "Strategic Guidance", text: "We help you make smart technology decisions that support growth and innovation." },
+        { title: "Scalable Solutions", text: "Our support scales with your business, from startup to enterprise." },
       ],
       cta: {
         title: "Ready to Optimize Your IT Infrastructure?",

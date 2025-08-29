@@ -7,19 +7,19 @@ export const HERO_CONTENT = {
     "Trusted by startups & enterprises",
     "24/7 IT support",
   ],
-  tagline: "Building smarter software for tomorrow",
+  tagline: "Top-rated software development company for growth-focused brands",
   headline: {
-    pre: "Smart",
-    highlight: "software solutions",
-    post: "for",
-    line2: "business growth",
+    pre: "Custom",
+    highlight: "software development",
+    post: "& IT services",
+    line2: "that drive business growth",
   },
   description:
-    "Lyseibug builds scalable websites, apps, and ERP systems with reliable IT support to fuel your growth.",
+    "Lyseibug is a software development agency that builds SEO-friendly websites, high-performance mobile apps, and scalable ERP systems—backed by proactive IT support—to accelerate your digital growth.",
 
   ctas: {
-    primary: { label: "Get Started", href: "#get-started" },
-    secondary: { label: "Contact Us", href: "#contact" },
+    primary: { label: "Start your project", href: "#get-started" },
+    secondary: { label: "Book a free consultation", href: "#contact" },
   },
 } as const;
 
