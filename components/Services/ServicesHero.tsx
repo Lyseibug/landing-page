@@ -4,9 +4,9 @@ export default function ServicesHero() {
   return (
     <section
       id="services-hero"
-      className="relative overflow-hidden border-b border-gray-200/60 bg-white"
+      className="relative overflow-hidden bg-white"
     >
-      <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:py-28">
+      <div className="relative mx-auto max-w-7xl px-4 pt-16 pb-0 sm:px-6 md:pt-24 md:pb-0 lg:pt-28 lg:pb-0">
         {/* Top center badge */}
         <div className="mb-6 flex justify-center sm:mb-8">
           <div className="inline-flex items-center rounded-full bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-900">
