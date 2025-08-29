@@ -55,3 +55,68 @@ export const SERVICES_CONTENT = {
 } as const;
 
 
+// Services page list section
+export type ServicePageItem = {
+  title: string;
+  description: string;
+  image: { src: string; alt: string };
+};
+
+export const SERVICES_PAGE_LIST: ServicePageItem[] = [
+  {
+    title: "Search Engine Optimization (SEO)",
+    description:
+      "Our SEO experts are dedicated to helping your website rank higher in search engine results pages (SERPs).",
+    image: {
+      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop",
+      alt: "Analytics dashboard showing SEO metrics",
+    },
+  },
+  {
+    title: "Content Marketing",
+    description:
+      "Engage your audience and establish your brand as a thought leader with our content marketing services.",
+    image: {
+      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop",
+      alt: "Hand writing audience with arrows on whiteboard",
+    },
+  },
+  {
+    title: "Social Media Marketing",
+    description:
+      "We help you connect with your audience, build relationships, and drive engagement across various platforms.",
+    image: {
+      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop",
+      alt: "Smartphone showing social media app icons",
+    },
+  },
+  {
+    title: "Email Marketing",
+    description:
+      "Nurture leads and drive conversions with our email marketing services, from newsletters to drip campaigns.",
+    image: {
+      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop",
+      alt: "Laptop screen open to an email client",
+    },
+  },
+  {
+    title: "Analytics and Reporting",
+    description:
+      "Gain valuable insights into your digital marketing performance with our analytics and reporting services.",
+    image: {
+      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop",
+      alt: "Laptop showing analytics charts and graphs",
+    },
+  },
+  {
+    title: "Conversion Rate Optimization (CRO)",
+    description:
+      "Maximize the effectiveness of your digital marketing efforts with our conversion rate optimization services.",
+    image: {
+      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop",
+      alt: "Person analyzing conversion data on laptop",
+    },
+  },
+];
+
+
