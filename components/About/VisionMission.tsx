@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { VISION_MISSION_CONTENT } from "@/constants/content";
+import { VISION_MISSION_CONTENT } from "@/constants/about";
 
 export default function VisionMission() {
   return (

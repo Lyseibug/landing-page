@@ -16,125 +16,15 @@ export const NAV_TEXT = {
   toggleAriaLabel: "Toggle menu",
 };
 
-export const HERO_CONTENT = {
-  statPills: [
-    "95% Client retention",
-    "13+ Projects delivered",
-    "70% Faster deployment",
-    "5x Business scalability",
-    "Trusted by startups & enterprises",
-    "24/7 IT support",
-  ],
-  tagline: "Building smarter software for tomorrow",
-  headline: {
-    pre: "Smart",
-    highlight: "software solutions",
-    post: "for",
-    line2: "business growth",
-  },
-  description:
-    "Lyseibug builds scalable websites, apps, and ERP systems with reliable IT support to fuel your growth.",
+// Home page specific content moved to constants/home.ts
 
-  ctas: {
-    primary: { label: "Get Started", href: "#get-started" },
-    secondary: { label: "Contact Us", href: "#contact" },
-  },
-} as const;
+// About page specific content moved to constants/about.ts
 
-export const ABOUT_HERO_CONTENT = {
-  badge: "About us",
-  headline: {
-    pre: "Your trusted",
-    highlight: "partner",
-    post: "for growing",
-    line2: "your business",
-  },
-  description:
-    "Welcome to Lyseibug, we're here to help you achieve your business goals and take your brand to new heights in the digital landscape.",
-  image: {
-    src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/about-us.webp",
-    alt: "Team celebrating around a laptop",
-  },
-} as const;
+// About page specific content moved to constants/about.ts
 
-export const ABOUT_CONTENT = {
-  badge: "About us",
-  heading: "Welcome to Lyseibug",
-  description:
-    "We are a technology-driven software agency dedicated to transforming business ideas into powerful digital solutions. From startups to enterprises, we craft tailored applications that boost efficiency, scalability, and customer satisfaction.",
-  cta: { label: "More about us", href: "/about" },
-  image: {
-    src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/about-us.webp",
-    alt: "Developers collaborating on software projects",
-  },
-  stats: [
-    { value: "3+", label: "Years of experience" },
-    { value: "10+", label: "Satisfied clients" },
-    { value: "13+", label: "Projects completed" },
-    { value: "5+", label: "Industries served" },
-  ],
-} as const;
+// About page specific content moved to constants/about.ts
 
-export const VISION_MISSION_CONTENT = {
-  image: {
-    src: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1600&auto=format&fit=crop",
-    alt: "Team meeting at a creative workspace",
-  },
-  mission: {
-    title: "Our Mission",
-    description:
-      "to empower businesses like yours to thrive in the digital age. We believe that every brand has a unique story to tell, and we're here to help you tell yours. We'll work hand-in-hand with you to unlock your brand's full potential and drive measurable results that propel your business forward.",
-  },
-  approach: {
-    title: "Our approach",
-    description:
-      "What sets us apart is our holistic approach to digital marketing. We don't just focus on one aspect of your online presence - we take a comprehensive view of your brand, your goals, and your target audience to develop customized strategies that deliver real, tangible results.",
-  },
-} as const;
-
-export type ServiceText = { title: string; description: string };
-
-export const SERVICES_CONTENT = {
-  badge: "Our services",
-  heading: "What We Offer",
-  description:
-    "We provide end-to-end software development and IT solutions that empower businesses to scale, innovate, and stay competitive in the digital era.",
-  items: [
-    {
-      title: "Web Development",
-      description:
-        "We build high-performing, responsive, and secure websites tailored to your brand and business goals.",
-    },
-    {
-      title: "Mobile App Development",
-      description:
-        "Our team creates user-friendly Android and iOS apps designed for performance, engagement, and growth.",
-    },
-    {
-      title: "ERP Solutions",
-      description:
-        "Streamline operations and improve productivity with our customized ERP software built to fit your processes.",
-    },
-    {
-      title: "Software Rescue",
-      description:
-        "We fix, upgrade, and optimize underperforming or incomplete software projects, saving you time and costs.",
-    },
-    {
-      title: "IT Support & Consultancy",
-      description:
-        "Get reliable IT support and expert consultancy to keep your systems secure, efficient, and future-ready.",
-    },
-    {
-      title: "Business Solutions",
-      description: "Drive growth and efficiency with our tailored business solutions designed to optimize performance and support your success."
-    }
-
-
-  ] as ServiceText[],
-  moreDetailsLabel: "More details",
-  viewAll: { label: "View all services", href: "/services" },
-} as const;
+// Services page specific content moved to constants/services.ts
 
 export const WHY_US_CONTENT = {
   badge: "Why choose us",

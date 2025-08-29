@@ -6,7 +6,7 @@ import {
   ShieldCheck,
   Headphones,
 } from "lucide-react";
-import { HERO_CONTENT } from "@/constants/content";
+import { HERO_CONTENT } from "@/constants/home";
 
 export default function Hero() {
   return (

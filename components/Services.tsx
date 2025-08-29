@@ -8,7 +8,7 @@ import {
   BarChart3, // Fallback
 } from "lucide-react";
 
-import { SERVICES_CONTENT, type ServiceText } from "@/constants/content";
+import { SERVICES_CONTENT, type ServiceText } from "@/constants/services";
 
 type Service = {
   title: string;
