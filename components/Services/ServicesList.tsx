@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   SERVICES_PAGE_LIST,
   type ServicePageItem,
@@ -46,9 +47,12 @@ export default function ServicesList() {
                 <p className="mt-2 max-w-xl text-slate-600">
                   {item.description}
                 </p>
-                <button className="mt-4 inline-flex items-center rounded-full border border-indigo-900 bg-white px-5 py-2 text-sm font-semibold text-indigo-900 shadow-sm transition-colors hover:bg-indigo-50">
+                <Link
+                  href={`/services/${item.slug}`}
+                  className="mt-4 inline-flex items-center rounded-full border border-indigo-900 bg-white px-5 py-2 text-sm font-semibold text-indigo-900 shadow-sm transition-colors hover:bg-indigo-50"
+                >
                   Learn more
-                </button>
+                </Link>
               </div>
 
               {/* Image */}

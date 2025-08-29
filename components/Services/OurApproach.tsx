@@ -1,7 +1,9 @@
 import Link from "next/link";
-import { SERVICE_DETAIL_APPROACH_CONTENT as C } from "@/constants/services";
+import { type ServiceDetailApproachContent } from "@/constants/services";
 
-export default function OurApproach() {
+type Props = { content: ServiceDetailApproachContent };
+
+export default function OurApproach({ content: C }: Props) {
   return (
     <section className="relative overflow-hidden bg-white">
       <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 md:py-16 lg:max-w-4xl lg:py-20">

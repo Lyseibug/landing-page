@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 
 type Service = {
+  slug: string;
   title: string;
   description: string;
   icon: LucideIcon;
@@ -28,6 +29,7 @@ const serviceIcons = [
 
 const services: Service[] = SERVICES_CONTENT.items.map(
   (item: ServiceText, index: number) => ({
+    slug: item.slug,
     title: item.title,
     description: item.description,
     icon: serviceIcons[index] ?? BarChart,
@@ -81,8 +83,8 @@ export default function Services() {
                   {service.description}
                 </p>
 
-                <a
-                  href="#"
+                <Link
+                  href={`/services/${service.slug}`}
                   className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-indigo-700 hover:text-indigo-800"
                 >
                   {SERVICES_CONTENT.moreDetailsLabel}
@@ -94,7 +96,7 @@ export default function Services() {
                   >
                     <path d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 11-1.414-1.414L13.586 11H4a1 1 0 110-2h9.586l-3.293-3.293a1 1 0 010-1.414z" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </article>
           ))}
