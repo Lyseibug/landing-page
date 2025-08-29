@@ -1,12 +1,14 @@
 import { BRAND_NAME, FOOTER_CONTENT } from "@/constants/content";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter, faLinkedin, faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import type { ReactNode } from "react";
 
 const socialIconMap: Record<string, ReactNode> = {
-  Twitter: <Twitter className="h-4 w-4" aria-hidden />,
-  LinkedIn: <Linkedin className="h-4 w-4" aria-hidden />,
-  Instagram: <Instagram className="h-4 w-4" aria-hidden />,
-  Facebook: <Facebook className="h-4 w-4" aria-hidden />,
+  Twitter: <FontAwesomeIcon icon={faTwitter} className="h-4 w-4" aria-hidden />,
+  LinkedIn: <FontAwesomeIcon icon={faLinkedin} className="h-4 w-4" aria-hidden />,
+  Instagram: <FontAwesomeIcon icon={faInstagram} className="h-4 w-4" aria-hidden />,
+  Facebook: <FontAwesomeIcon icon={faFacebook} className="h-4 w-4" aria-hidden />,
 };
 
 export default function Footer() {
@@ -52,12 +54,21 @@ export default function Footer() {
               <ul className="mt-4 space-y-3">
                 {col.links.map((link) => (
                   <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-sm text-slate-700 transition-colors hover:text-slate-900"
-                    >
-                      {link.label}
-                    </a>
+                    {link.href.startsWith("/") ? (
+                      <Link
+                        href={link.href}
+                        className="text-sm text-slate-700 transition-colors hover:text-slate-900"
+                      >
+                        {link.label}
+                      </Link>
+                    ) : (
+                      <a
+                        href={link.href}
+                        className="text-sm text-slate-700 transition-colors hover:text-slate-900"
+                      >
+                        {link.label}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>

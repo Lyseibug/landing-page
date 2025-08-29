@@ -1,4 +1,5 @@
 import { ABOUT_CONTENT } from "@/constants/about";
+import Link from "next/link";
 import Image from "next/image";
 
 export default function About() {
@@ -21,12 +22,12 @@ export default function About() {
               {ABOUT_CONTENT.description}
             </p>
             <div className="mt-8">
-              <a
+              <Link
                 href={ABOUT_CONTENT.cta.href}
                 className="inline-flex rounded-full border border-indigo-900 px-6 py-3 text-sm font-semibold text-indigo-900 transition-colors hover:bg-indigo-50 md:text-base"
               >
                 {ABOUT_CONTENT.cta.label}
-              </a>
+              </Link>
             </div>
           </div>
 

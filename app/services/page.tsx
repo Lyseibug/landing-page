@@ -1,4 +1,3 @@
-import Services from "@/components/Services";
 import ServicesHero from "@/components/ServicesHero";
 import CTA from "@/components/CTA";
 

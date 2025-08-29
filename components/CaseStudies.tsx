@@ -1,14 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { TrendingUp, BarChart3 } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChartLine, faChartBar } from "@fortawesome/free-solid-svg-icons";
 import { CASE_STUDIES_CONTENT } from "@/constants/content";
 
 function StatPill({ type, label }: { type: "chart" | "growth"; label: string }) {
-  const Icon = type === "growth" ? TrendingUp : BarChart3;
+  const icon = type === "growth" ? faChartLine : faChartBar;
   return (
     <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 shadow-sm">
-      <Icon className="h-4 w-4 text-emerald-500" />
+      <FontAwesomeIcon icon={icon} className="h-4 w-4 text-emerald-500" />
       <span>{label}</span>
     </div>
   );

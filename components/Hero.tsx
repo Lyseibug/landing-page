@@ -1,12 +1,13 @@
 import { HERO_CONTENT } from "@/constants/home";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  TrendingUp,
-  FolderKanban,
-  Zap,
-  BarChart3,
-  ShieldCheck,
-  Headphones,
-} from "lucide-react";
+  faChartLine,
+  faFolderTree,
+  faBolt,
+  faChartBar,
+  faShieldHalved,
+  faHeadphones,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Hero() {
   return (
@@ -27,7 +28,7 @@ export default function Hero() {
         >
           <div className="absolute left-12 top-24">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-              <TrendingUp className="h-4 w-4 text-indigo-500" />
+              <FontAwesomeIcon icon={faChartLine} className="h-4 w-4 text-indigo-500" />
               <span>{HERO_CONTENT.statPills[0]}</span>{" "}
               {/* 95% Client retention */}
             </div>
@@ -35,7 +36,7 @@ export default function Hero() {
 
           <div className="absolute right-12 top-28">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-              <FolderKanban className="h-4 w-4 text-indigo-500" />
+              <FontAwesomeIcon icon={faFolderTree} className="h-4 w-4 text-indigo-500" />
               <span>{HERO_CONTENT.statPills[1]}</span>{" "}
               {/* 200+ Projects delivered */}
             </div>
@@ -43,7 +44,7 @@ export default function Hero() {
 
           <div className="absolute left-20 top-75">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-              <Zap className="h-4 w-4 text-yellow-500" />
+              <FontAwesomeIcon icon={faBolt} className="h-4 w-4 text-yellow-500" />
               <span>{HERO_CONTENT.statPills[2]}</span>{" "}
               {/* 70% Faster deployment */}
             </div>
@@ -51,7 +52,7 @@ export default function Hero() {
 
           <div className="absolute right-20 top-75">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-              <BarChart3 className="h-4 w-4 text-rose-500" />
+              <FontAwesomeIcon icon={faChartBar} className="h-4 w-4 text-rose-500" />
               <span>{HERO_CONTENT.statPills[3]}</span>{" "}
               {/* 5x Business scalability */}
             </div>
@@ -59,7 +60,7 @@ export default function Hero() {
 
           <div className="absolute left-30 top-120">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-              <ShieldCheck className="h-4 w-4 text-emerald-500" />
+              <FontAwesomeIcon icon={faShieldHalved} className="h-4 w-4 text-emerald-500" />
               <span>{HERO_CONTENT.statPills[4]}</span>{" "}
               {/* Trusted by startups & enterprises */}
             </div>
@@ -67,7 +68,7 @@ export default function Hero() {
 
           <div className="absolute right-30 top-120">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
-              <Headphones className="h-4 w-4 text-sky-500" />
+              <FontAwesomeIcon icon={faHeadphones} className="h-4 w-4 text-sky-500" />
               <span>{HERO_CONTENT.statPills[5]}</span> {/* 24/7 IT support */}
             </div>
           </div>
@@ -75,7 +76,7 @@ export default function Hero() {
         {/* Top center pill */}
         <div className="mb-8 flex justify-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-900">
-            <Zap className="h-4 w-4" />
+            <FontAwesomeIcon icon={faBolt} className="h-4 w-4" />
             <span>{HERO_CONTENT.tagline}</span>
           </div>
         </div>

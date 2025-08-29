@@ -1,26 +1,27 @@
 import { BRAND_NAME, NAV_ITEMS, NAV_TEXT } from "@/constants/content";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-gray-200/60 bg-white/80 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <a
+        <Link
           href="/"
           className="text-xl font-semibold tracking-tight text-indigo-900"
         >
           {BRAND_NAME}
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <nav className="hidden items-center gap-8 md:flex">
           {NAV_ITEMS.slice(0, 5).map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               className="text-sm text-gray-600 transition-colors hover:text-gray-900"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -76,13 +77,13 @@ export default function Navbar() {
           <div className="mx-auto max-w-7xl px-4 pb-6 pt-2 sm:px-6 lg:px-8">
             <nav className="flex flex-col gap-4 py-2">
               {NAV_ITEMS.map((item) => (
-                <a
+                <Link
                   key={item.href}
                   href={item.href}
                   className="text-base text-gray-700 hover:text-gray-900"
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </nav>
             <a
