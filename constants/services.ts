@@ -151,3 +151,94 @@ export const SERVICES_PROCESS_CONTENT = {
 } as const;
 
 
+// Service detail: Hero (SEO)
+export const SERVICE_DETAIL_HERO_CONTENT = {
+  badge: "Service",
+  title: {
+    line1: "Search Engine",
+    line2: "Optimization (SEO)",
+  },
+  description:
+    "At Zenith, we understand the critical role that search engine optimization (SEO) plays in driving organic traffic to your website and increasing your online visibility. With our comprehensive SEO services, we'll help you climb the search engine rankings, outrank your competitors, and attract more qualified leads to your business.",
+  image: {
+    src: "https://images.unsplash.com/photo-1551281044-8d8d276e8b53?q=80&w=1600&auto=format&fit=crop",
+    alt: "SEO dashboard showing clicks, impressions, CTR, and position",
+  },
+} as const;
+
+
+// Service detail: Our Approach (SEO)
+export const SERVICE_DETAIL_APPROACH_CONTENT = {
+  introTitle: "Our Approach",
+  introText:
+    "Our SEO approach is built on a foundation of data-driven insights, strategic planning, and continuous optimization. Here's how we do it:",
+  steps: [
+    {
+      title: "Comprehensive Website Audit",
+      text:
+        "We'll start by conducting a thorough audit of your website to identify areas for improvement, including technical issues, on-page optimization, and user experience enhancements.",
+    },
+    {
+      title: "Keyword Research",
+      text:
+        "Using advanced keyword research tools and techniques, we'll identify the most relevant and high-performing keywords for your industry, target audience, and business objectives.",
+    },
+    {
+      title: "On-Page Optimization",
+      text:
+        "We'll optimize your website's meta tags, headers, content, and internal linking structure to ensure maximum visibility and relevance to search engines.",
+    },
+    {
+      title: "Content Strategy",
+      text:
+        "Our team of expert content creators will develop a customized content strategy designed to engage your audience, drive traffic, and improve your search engine rankings.",
+    },
+    {
+      title: "Link Building",
+      text:
+        "We'll help you earn high-quality backlinks from authoritative websites in your industry, boosting your website's authority and credibility in the eyes of search engines.",
+    },
+    {
+      title: "Local SEO",
+      text:
+        "For businesses with a physical presence, we'll optimize your website for local search, ensuring that you appear prominently in local search results and Google Maps listings.",
+    },
+    {
+      title: "Ongoing Monitoring and Optimization",
+      text:
+        "We'll continuously monitor your website's performance, track key metrics, and make data-driven adjustments to optimize your SEO strategy for maximum results.",
+    },
+  ],
+  whyTitle: "Why Choose Zenith for Your SEO Needs?",
+  whyBullets: [
+    {
+      title: "Proven Track Record",
+      text:
+        "We have a proven track record of success, helping businesses like yours achieve higher search engine rankings, increased organic traffic, and improved online visibility.",
+    },
+    {
+      title: "Customized Strategies",
+      text:
+        "We don't believe in one-size-fits-all solutions. Our SEO strategies are tailored to your unique business goals, industry, and target audience, ensuring maximum effectiveness and ROI.",
+    },
+    {
+      title: "Transparent Reporting",
+      text:
+        "We provide regular reports and updates detailing the performance of your SEO campaign, including key metrics, insights, and recommendations for future action.",
+    },
+    {
+      title: "Dedicated Support",
+      text:
+        "Our team of SEO experts is here to support you every step of the way, answering your questions, addressing your concerns, and providing ongoing guidance and support.",
+    },
+  ],
+  cta: {
+    title: "Get Started with Zenith Today",
+    text:
+      "Ready to take your SEO efforts to the next level? Contact us today to learn more about our SEO services and how we can help you achieve your business goals. Let's work together to elevate your online presence and drive success for your business.",
+    primary: { label: "Get Started", href: "#get-started" },
+    secondary: { label: "Contact Us", href: "/contact" },
+  },
+} as const;
+
+
