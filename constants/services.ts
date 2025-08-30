@@ -9,44 +9,44 @@ export const SERVICES_HERO_CONTENT = {
     line2: "for modern businesses",
   },
   description:
-    "End-to-end software development and IT services to solve complex challenges, improve efficiency, and accelerate digital growth—with measurable ROI.",
+    "End-to-end software development company for web, mobile, ERP, and IT support—solving complex challenges, improving efficiency, and accelerating digital growth with measurable ROI.",
 } as const;
 
 export const SERVICES_CONTENT = {
   badge: "What We Do",
   heading: "Comprehensive Software & IT Services",
   description:
-    "From concept to deployment and beyond, our full-stack expertise empowers businesses to innovate, scale, and maintain a competitive edge.",
+    "From strategy to launch and ongoing support, our full‑stack team helps you innovate, scale, and stay competitive with secure, high‑performance software.",
   items: [
     {
       slug: "web-development",
       title: "Web Development",
       description:
-        "Custom web development for fast, secure, and SEO-friendly websites and web apps that increase conversions and scale with your business.",
+        "Custom web development services for fast, secure, SEO‑friendly websites and apps optimized for Core Web Vitals and conversions.",
     },
     {
       slug: "mobile-app-development",
       title: "Mobile App Development",
       description:
-        "Native and cross‑platform mobile app development delivering top UX, performance, and market success across iOS and Android.",
+        "End‑to‑end iOS and Android app development—native or cross‑platform—with outstanding UX, performance, and reliability.",
     },
     {
       slug: "erp-solutions",
       title: "ERP Solutions",
       description:
-        "Tailored ERP solutions that streamline operations, centralize data, and provide real‑time insights to improve productivity and decision‑making.",
+        "Custom ERP solutions to automate workflows, centralize data, and gain real‑time insights that lower costs and improve decisions.",
     },
     {
       slug: "software-rescue",
       title: "Software Rescue",
       description:
-        "Software rescue services to fix failing projects—code audits, refactoring, and delivery to restore quality, speed, and reliability.",
+        "Software rescue and modernization—audits, refactoring, and delivery to stabilize failing projects and restore quality and speed.",
     },
     {
       slug: "it-support-consultancy",
       title: "IT Support & Consultancy",
       description:
-        "Proactive IT support and technology consulting to secure your infrastructure, reduce downtime, and align IT with business goals.",
+        "Managed IT support and consulting to strengthen security, reduce downtime, and align technology with business goals.",
     },
   ] as ServiceText[],
   moreDetailsLabel: "Explore service",
@@ -66,7 +66,7 @@ export const SERVICES_PAGE_LIST: ServicePageItem[] = [
     slug: "web-development",
     title: "Web Development",
     description:
-      "We craft responsive, secure, and scalable web solutions that convert visitors into customers and support your business growth.",
+      "We build responsive, secure, and scalable websites that improve Core Web Vitals, rank better, and convert more visitors.",
     image: {
       src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1615&auto=format&fit=crop",
       alt: "A developer coding a modern website interface",
@@ -76,7 +76,7 @@ export const SERVICES_PAGE_LIST: ServicePageItem[] = [
     slug: "mobile-app-development",
     title: "Mobile App Development",
     description:
-      "Our team builds intuitive, high-performing mobile applications that deliver seamless user experiences and drive engagement.",
+      "Design and develop intuitive, high‑performing mobile apps that delight users and drive engagement across iOS and Android.",
     image: {
       src: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1600&auto=format&fit=crop",
       alt: "Hand holding a smartphone showing a beautifully designed app",
@@ -86,7 +86,7 @@ export const SERVICES_PAGE_LIST: ServicePageItem[] = [
     slug: "erp-solutions",
     title: "ERP Solutions",
     description:
-      "Implement tailored Enterprise Resource Planning systems to unify your business processes, data, and teams onto a single, efficient platform.",
+      "Plan and implement tailored ERP systems to unify processes, data, and teams—improving productivity and visibility.",
     image: {
       src: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop",
       alt: "Team collaborating over data dashboards",
@@ -96,7 +96,7 @@ export const SERVICES_PAGE_LIST: ServicePageItem[] = [
     slug: "software-rescue",
     title: "Software Rescue",
     description:
-      "Struggling with a difficult software project? We specialize in diagnosing issues, rewriting code, and delivering a robust, functional product.",
+      "Diagnose issues, refactor code, and deliver a reliable product with a pragmatic rescue plan and rapid execution.",
     image: {
       src: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1600&auto=format&fit=crop",
       alt: "Developers collaborating to solve a coding problem on a screen",
@@ -106,7 +106,7 @@ export const SERVICES_PAGE_LIST: ServicePageItem[] = [
     slug: "it-support-consultancy",
     title: "IT Support & Consultancy",
     description:
-      "Get reliable, ongoing IT support and strategic advice to optimize your technology stack, enhance security, and reduce downtime.",
+      "Get proactive IT support and strategic guidance to optimize your stack, enhance security, and cut downtime.",
     image: {
       src: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=1600&auto=format&fit=crop",
       alt: "IT consultant explaining network diagrams to a client",
@@ -173,7 +173,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       badge: "Service",
       title: { line1: "Web", line2: "Development" },
       description:
-        "We build fast, secure, and SEO-optimized websites and web applications that improve Core Web Vitals, boost conversions, and drive measurable business results.",
+        "We deliver custom web development services—fast, secure, SEO‑optimized websites and apps that improve Core Web Vitals, boost rankings, and increase conversions.",
       image: {
         src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1615&auto=format&fit=crop",
         alt: "Developer creating a modern web application",
@@ -210,7 +210,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       badge: "Service",
       title: { line1: "Mobile App", line2: "Development" },
       description:
-        "From concept to launch, we create intuitive, high‑performance iOS and Android apps that users love—accelerating time‑to‑market and business growth.",
+        "End‑to‑end mobile app development for iOS and Android—user‑centric design, high performance, and secure architecture to accelerate time‑to‑market and growth.",
       image: {
         src: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1600&auto=format&fit=crop",
         alt: "A sleek mobile app interface on a phone",
@@ -246,7 +246,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       badge: "Service",
       title: { line1: "ERP", line2: "Solutions" },
       description:
-        "Tailored ERP systems that streamline operations, reduce costs, improve visibility, and enable data‑driven decisions across your organization.",
+        "Custom ERP solutions that streamline operations, automate workflows, and provide real‑time visibility—reducing costs and enabling data‑driven decisions.",
       image: {
         src: "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop",
         alt: "Dashboard showing business analytics and KPIs",
@@ -282,7 +282,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       badge: "Service",
       title: { line1: "Software", line2: "Rescue" },
       description:
-        "Revive troubled projects with expert intervention. We audit, stabilize, and modernize legacy code, refactor architecture, and deliver reliable, maintainable software—fast.",
+        "Software rescue and legacy modernization—rapid audits, stabilization, refactoring, and delivery to turn failing projects into reliable, maintainable software.",
       image: {
         src: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1600&auto=format&fit=crop",
         alt: "Team collaborating to solve complex software problems",
@@ -318,7 +318,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       badge: "Service",
       title: { line1: "IT Support &", line2: "Consultancy" },
       description:
-        "Proactive IT support and strategic consulting to keep systems secure, compliant, and efficient—reducing downtime and total cost of ownership.",
+        "Managed IT support and strategic consultancy to secure systems, ensure compliance, cut downtime, and align technology with business goals.",
       image: {
         src: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=1600&auto=format&fit=crop",
         alt: "IT consultant discussing technology strategy with clients",
