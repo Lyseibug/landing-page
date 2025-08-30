@@ -7,8 +7,6 @@ import { BRAND_NAME } from "@/constants/content";
 import { notFound } from "next/navigation";
 import { absoluteUrl, buildOpenGraph, buildTwitterCard, buildServiceJsonLd } from "@/constants/seo";
 
-type PageProps = { params: { slug: string } };
-
 // Per‑service SEO overrides (title, description, keywords)
 const SEO_OVERRIDES: Record<string, { title: string; description: string; keywords: string[] }> = {
   "web-development": {
@@ -84,8 +82,9 @@ export function generateStaticParams() {
   return Array.from(new Set(slugs)).map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
-  const detail = SERVICE_DETAILS[params.slug as keyof typeof SERVICE_DETAILS];
+export async function generateMetadata({ params }: any): Promise<Metadata> {
+  const { slug } = await params;
+  const detail = SERVICE_DETAILS[slug as keyof typeof SERVICE_DETAILS];
   if (!detail) return {};
   const override = SEO_OVERRIDES[detail.slug];
   const titleText = override?.title ?? `${detail.hero.title.line1} ${detail.hero.title.line2} | ${BRAND_NAME}`;
@@ -111,7 +110,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   };
 }
 
-export default function DetailPage({ params }: PageProps) {
+export default function DetailPage({ params }: { params: { slug: string } }) {
   const detail = SERVICE_DETAILS[params.slug as keyof typeof SERVICE_DETAILS];
   if (!detail) return notFound();
 
