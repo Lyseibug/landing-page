@@ -82,7 +82,7 @@ export function generateStaticParams() {
   return Array.from(new Set(slugs)).map((slug) => ({ slug }));
 }
 
-export async function generateMetadata({ params }: any): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const detail = SERVICE_DETAILS[slug as keyof typeof SERVICE_DETAILS];
   if (!detail) return {};
@@ -110,8 +110,9 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
   };
 }
 
-export default function DetailPage({ params }: { params: { slug: string } }) {
-  const detail = SERVICE_DETAILS[params.slug as keyof typeof SERVICE_DETAILS];
+export default async function DetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const detail = SERVICE_DETAILS[slug as keyof typeof SERVICE_DETAILS];
   if (!detail) return notFound();
 
   return (
