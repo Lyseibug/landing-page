@@ -42,7 +42,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="absolute left-20 top-75">
+          <div className="absolute left-20 top-50">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
               <FontAwesomeIcon icon={faBolt} className="h-4 w-4 text-yellow-500" />
               <span>{HERO_CONTENT.statPills[2]}</span>{" "}
@@ -50,7 +50,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="absolute right-20 top-75">
+          <div className="absolute right-20 top-50">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
               <FontAwesomeIcon icon={faChartBar} className="h-4 w-4 text-rose-500" />
               <span>{HERO_CONTENT.statPills[3]}</span>{" "}
@@ -58,7 +58,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="absolute left-30 top-120">
+          <div className="absolute left-30 top-125">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
               <FontAwesomeIcon icon={faShieldHalved} className="h-4 w-4 text-emerald-500" />
               <span>{HERO_CONTENT.statPills[4]}</span>{" "}
@@ -66,7 +66,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="absolute right-30 top-120">
+          <div className="absolute right-30 top-125">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur">
               <FontAwesomeIcon icon={faHeadphones} className="h-4 w-4 text-sky-500" />
               <span>{HERO_CONTENT.statPills[5]}</span> {/* 24/7 IT support */}
