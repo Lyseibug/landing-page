@@ -68,7 +68,7 @@ export const SERVICES_PAGE_LIST: ServicePageItem[] = [
     description:
       "We build responsive, secure, and scalable websites that improve Core Web Vitals, rank better, and convert more visitors.",
     image: {
-      src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1615&auto=format&fit=crop",
+      src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/services/web-development.webp",
       alt: "A developer coding a modern website interface",
     },
   },
@@ -78,7 +78,7 @@ export const SERVICES_PAGE_LIST: ServicePageItem[] = [
     description:
       "Design and develop intuitive, high‑performing mobile apps that delight users and drive engagement across iOS and Android.",
     image: {
-      src: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1600&auto=format&fit=crop",
+      src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/services/mobile-development.webp",
       alt: "Hand holding a smartphone showing a beautifully designed app",
     },
   },
@@ -88,7 +88,7 @@ export const SERVICES_PAGE_LIST: ServicePageItem[] = [
     description:
       "Plan and implement tailored ERP systems to unify processes, data, and teams—improving productivity and visibility.",
     image: {
-      src: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop",
+      src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/services/erp-solutions.webp",
       alt: "Team collaborating over data dashboards",
     },
   },
@@ -98,7 +98,7 @@ export const SERVICES_PAGE_LIST: ServicePageItem[] = [
     description:
       "Diagnose issues, refactor code, and deliver a reliable product with a pragmatic rescue plan and rapid execution.",
     image: {
-      src: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1600&auto=format&fit=crop",
+      src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/services/software-rescue.webp",
       alt: "Developers collaborating to solve a coding problem on a screen",
     },
   },
@@ -108,7 +108,7 @@ export const SERVICES_PAGE_LIST: ServicePageItem[] = [
     description:
       "Get proactive IT support and strategic guidance to optimize your stack, enhance security, and cut downtime.",
     image: {
-      src: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=1600&auto=format&fit=crop",
+      src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/services/it-support-and+-consultancy.webp",
       alt: "IT consultant explaining network diagrams to a client",
     },
   },
@@ -175,7 +175,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       description:
         "We deliver custom web development services—fast, secure, SEO‑optimized websites and apps that improve Core Web Vitals, boost rankings, and increase conversions.",
       image: {
-        src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1615&auto=format&fit=crop",
+        src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/services/web-development.webp",
         alt: "Developer creating a modern web application",
       },
     },
@@ -212,7 +212,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       description:
         "End‑to‑end mobile app development for iOS and Android—user‑centric design, high performance, and secure architecture to accelerate time‑to‑market and growth.",
       image: {
-        src: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1600&auto=format&fit=crop",
+        src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/services/mobile-development.webp",
         alt: "A sleek mobile app interface on a phone",
       },
     },
@@ -248,7 +248,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       description:
         "Custom ERP solutions that streamline operations, automate workflows, and provide real‑time visibility—reducing costs and enabling data‑driven decisions.",
       image: {
-        src: "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop",
+        src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/services/erp-solutions.webp",
         alt: "Dashboard showing business analytics and KPIs",
       },
     },
@@ -284,7 +284,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       description:
         "Software rescue and legacy modernization—rapid audits, stabilization, refactoring, and delivery to turn failing projects into reliable, maintainable software.",
       image: {
-        src: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1600&auto=format&fit=crop",
+        src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/services/software-rescue.webp",
         alt: "Team collaborating to solve complex software problems",
       },
     },
@@ -320,7 +320,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       description:
         "Managed IT support and strategic consultancy to secure systems, ensure compliance, cut downtime, and align technology with business goals.",
       image: {
-        src: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=1600&auto=format&fit=crop",
+        src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/services/it-support-and+-consultancy.webp",
         alt: "IT consultant discussing technology strategy with clients",
       },
     },
