@@ -7,6 +7,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   // { label: "Case studies", href: "/cases" },
+  { label: "FAQs", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -118,9 +119,10 @@ export const FOOTER_CONTENT = {
     ],
   },
   socials: [
-    { label: "Twitter", href: "#" },
-    { label: "LinkedIn", href: "#" },
-    { label: "Facebook", href: "#" },
+    { label: "Twitter", href: "https://x.com/lyseibug" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/company/lyseibug" },
+    { label: "Instagram", href: "https://www.instagram.com/lyseibug" },
+    { label: "Facebook", href: "https://www.facebook.com/lyseibug" },
   ],
   columns: [
     {
@@ -130,15 +132,14 @@ export const FOOTER_CONTENT = {
         { label: "About", href: "/about" },
         { label: "Services", href: "/services" },
         // { label: "Case studies", href: "/cases" },
+        { label: "FAQs", href: "/faq" },
         { label: "Contact", href: "/contact" },
       ],
     },
     {
       title: "Utility",
       links: [
-        { label: "FAQs", href: "#" },
-        { label: "Privacy policy", href: "#" },
-        { label: "Terms & conditions", href: "#" },
+        { label: "FAQs", href: "/faq" },
       ],
     },
     {
@@ -156,4 +157,37 @@ export const FOOTER_CONTENT = {
     left: "Designed with passion by Lyseibug",
     right: "© Copyright 2025",
   },
+} as const;
+
+export const FAQ_CONTENT = {
+  badge: "FAQs",
+  heading: "Frequently asked questions",
+  description:
+    "Quick answers to common questions about our services, process, pricing, and support.",
+  faqs: [
+    {
+      q: "What services does Lyseibug provide?",
+      a: "We build SEO-friendly websites, high-performance mobile apps, scalable ERP solutions, and offer reliable IT support and consulting.",
+    },
+    {
+      q: "How do we start a project?",
+      a: "Start with a free consultation. We gather requirements, propose a solution, share timelines and costs, and then kick off with clear milestones.",
+    },
+    {
+      q: "What is your pricing model?",
+      a: "We offer fixed-price for well-defined scopes and time-and-materials for ongoing or evolving work. We’ll recommend the best fit after discovery.",
+    },
+    {
+      q: "Do you provide post-launch support?",
+      a: "Yes. We offer maintenance plans, uptime monitoring, bug fixes, enhancements, and scheduled updates based on your needs.",
+    },
+    {
+      q: "Can you work with our existing codebase?",
+      a: "Absolutely. We frequently audit, refactor, and rescue existing projects to improve stability, performance, and developer experience.",
+    },
+    {
+      q: "What technologies do you use?",
+      a: "We choose modern, proven stacks based on the problem—covering web, mobile, backend, and cloud. We prioritize reliability and long-term maintainability.",
+    },
+  ],
 } as const;
