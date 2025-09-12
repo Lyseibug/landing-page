@@ -155,7 +155,7 @@ export const FOOTER_CONTENT = {
   ],
   bottomBar: {
     left: "Designed with passion by Lyseibug",
-    right: "© Copyright 2025",
+    right: `© Copyright ${new Date().getFullYear()}`,
   },
 } as const;
 

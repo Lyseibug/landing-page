@@ -2,7 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/Common/Navbar";
 import { Poppins } from "next/font/google";
 import Footer from "@/components/Common/Footer";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { BRAND_NAME } from "@/constants/content";
 import {
   DEFAULT_SEO,
@@ -19,12 +19,6 @@ export const revalidate = 0;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-    viewportFit: "cover",
-  },
   title: {
     template: DEFAULT_SEO.titleTemplate,
     default: DEFAULT_SEO.defaultTitle,
@@ -63,29 +57,14 @@ export const metadata: Metadata = {
     title: DEFAULT_SEO.defaultTitle,
     description: DEFAULT_SEO.description,
   }),
-  icons: {
-    icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon.ico", sizes: "any" },
-      {
-        url: "/android-chrome-192x192.png",
-        sizes: "192x192",
-        type: "image/png",
-      },
-      {
-        url: "/android-chrome-512x512.png",
-        sizes: "512x512",
-        type: "image/png",
-      },
-    ],
-    shortcut: "/favicon.ico",
-    apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    ],
-    other: [{ rel: "mask-icon", url: "/safari-pinned-tab.svg" }],
-  },
   manifest: "/manifest.webmanifest",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
