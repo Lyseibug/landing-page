@@ -46,8 +46,8 @@ export function buildTwitterCard(args: { title: string; description: string; ima
 
 export function buildOrganizationJsonLd() {
   const socials = (FOOTER_CONTENT.socials || [])
-    .map((s) => s.href)
-    .filter((href) => href && href !== "#");
+    .map((s) => s.href as string)
+    .filter((href): href is string => Boolean(href));
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
