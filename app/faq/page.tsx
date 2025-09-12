@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
 import { BRAND_NAME, FAQ_CONTENT } from "@/constants/content";
-import {
-  DEFAULT_SEO,
-  SITE_URL,
-  absoluteUrl,
-  buildOpenGraph,
-  buildTwitterCard,
-} from "@/constants/seo";
+import { absoluteUrl, buildOpenGraph, buildTwitterCard } from "@/constants/seo";
 import CTA from "@/components/CTA";
 
 export const metadata: Metadata = {

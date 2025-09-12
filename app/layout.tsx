@@ -7,7 +7,6 @@ import { BRAND_NAME } from "@/constants/content";
 import {
   DEFAULT_SEO,
   SITE_URL,
-  absoluteUrl,
   buildOpenGraph,
   buildTwitterCard,
   buildOrganizationJsonLd,
