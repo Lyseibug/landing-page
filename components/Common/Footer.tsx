@@ -1,5 +1,6 @@
 import { BRAND_NAME, FOOTER_CONTENT } from "@/constants/content";
 import Link from "next/link";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faXTwitter,
@@ -32,17 +33,23 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
           {/* Brand + contact */}
           <div className="text-center md:text-left">
-            <div className="text-3xl font-semibold tracking-tight text-indigo-900">
-              {BRAND_NAME}
+            <div className="flex items-center justify-center gap-2 text-3xl font-semibold tracking-tight text-indigo-900 md:justify-start">
+              <Image
+                src="https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/logo.webp"
+                alt="Lyseibug logo"
+                width={36}
+                height={36}
+                className="h-9 w-9 object-contain"
+                priority
+              />
+              <span>{BRAND_NAME}</span>
             </div>
             <div className="mt-6 space-y-3 text-sm text-slate-700">
               <div>{FOOTER_CONTENT.contact.email}</div>
               <div>{FOOTER_CONTENT.contact.phone}</div>
               <div>
                 {FOOTER_CONTENT.contact.addressLines.map((line) => {
-                  return (
-                    <div key={line}>{line}</div>
-                  );
+                  return <div key={line}>{line}</div>;
                 })}
               </div>
             </div>

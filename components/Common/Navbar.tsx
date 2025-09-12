@@ -1,5 +1,6 @@
 import { BRAND_NAME, NAV_ITEMS, NAV_TEXT } from "@/constants/content";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
@@ -7,9 +8,17 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="text-xl font-semibold tracking-tight text-indigo-900"
+          className="flex items-center gap-2 text-xl font-semibold tracking-tight text-indigo-900"
         >
-          {BRAND_NAME}
+          <Image
+            src="https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/logo.webp"
+            alt="Lyseibug logo"
+            width={32}
+            height={32}
+            className="h-8 w-8 object-contain"
+            priority
+          />
+          <span>{BRAND_NAME}</span>
         </Link>
 
         {/* Desktop nav */}
