@@ -1,13 +1,12 @@
 import { FOOTER_CONTENT } from "@/constants/content";
+import { Mail, Phone, MapPin, AtSign } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  Mail,
-  Phone,
-  MapPin,
-  AtSign,
-  Twitter,
-  Linkedin,
-  Facebook,
-} from "lucide-react";
+  faXTwitter,
+  faLinkedin,
+  faFacebook,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 import ContactForm from "./ContactForm";
 
 export default function ContactSection() {
@@ -70,7 +69,6 @@ export default function ContactSection() {
               <MapPin className="h-5 w-5" aria-hidden />
             </div>
             <div className="mt-4 text-sm text-slate-700">
-              <div>Street Address</div>
               {FOOTER_CONTENT.contact.addressLines.map((line) => (
                 <div key={line}>{line}</div>
               ))}
@@ -84,25 +82,48 @@ export default function ContactSection() {
             </div>
             <div className="mt-4 flex items-center gap-4">
               <a
-                href="#"
+                href="https://x.com/lyseibug"
                 aria-label="Twitter"
                 className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 text-slate-700 transition-colors hover:bg-gray-50"
               >
-                <Twitter className="h-4 w-4" aria-hidden />
+                <FontAwesomeIcon
+                  icon={faXTwitter}
+                  className="h-4 w-4"
+                  aria-hidden
+                />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/lyseibug"
                 aria-label="LinkedIn"
                 className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 text-slate-700 transition-colors hover:bg-gray-50"
               >
-                <Linkedin className="h-4 w-4" aria-hidden />
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="h-4 w-4"
+                  aria-hidden
+                />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/lyseibug"
                 aria-label="Facebook"
                 className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 text-slate-700 transition-colors hover:bg-gray-50"
               >
-                <Facebook className="h-4 w-4" aria-hidden />
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  className="h-4 w-4"
+                  aria-hidden
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/lyseibug"
+                aria-label="Instagram"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 text-slate-700 transition-colors hover:bg-gray-50"
+              >
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="h-4 w-4"
+                  aria-hidden
+                />
               </a>
             </div>
           </div>
