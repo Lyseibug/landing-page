@@ -34,7 +34,7 @@ export const ABOUT_CONTENT = {
 
 export const VISION_MISSION_CONTENT = {
   image: {
-    src: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1600&auto=format&fit=crop",
+    src: "https://yaseen-personal-work.s3.ap-south-1.amazonaws.com/lyseibug/vision-mission.webp",
     alt: "Team meeting at a creative workspace",
   },
   mission: {

@@ -11,11 +11,6 @@ const nextConfig = {
         hostname: "yaseen-personal-work.s3.ap-south-1.amazonaws.com",
         pathname: "/**",
       },
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-        pathname: "/**",
-      },
     ],
   },
 };
