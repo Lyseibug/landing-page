@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import type { Metadata } from "next";
 // import CaseStudies from "@/components/CaseStudies";
 import CTA from "@/components/CTA";

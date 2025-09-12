@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import About from "@/components/About";

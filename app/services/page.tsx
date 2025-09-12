@@ -5,6 +5,7 @@ import ServicesProcess from "@/components/Services/Process";
 import CTA from "@/components/CTA";
 import { absoluteUrl, buildOpenGraph, buildTwitterCard } from "@/constants/seo";
 
+export const runtime = 'edge';
 export const metadata: Metadata = {
   title: "Software Development Services | Web, Mobile, ERP, IT Support | Lyseibug",
   description:

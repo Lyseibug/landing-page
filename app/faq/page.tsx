@@ -3,6 +3,7 @@ import { BRAND_NAME, FAQ_CONTENT } from "@/constants/content";
 import { absoluteUrl, buildOpenGraph, buildTwitterCard } from "@/constants/seo";
 import CTA from "@/components/CTA";
 
+export const runtime = 'edge';
 export const metadata: Metadata = {
   title: `FAQs | ${BRAND_NAME}`,
   description: FAQ_CONTENT.description,

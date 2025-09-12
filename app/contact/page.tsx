@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import CTA from "@/components/CTA";
 import ContactSection from "@/components/Contact/ContactSection";
 import { absoluteUrl, buildOpenGraph, buildTwitterCard } from "@/constants/seo";
+export const runtime = 'edge';
 
 export const metadata: Metadata = {
   title: "Contact Lyseibug | Schedule a Free Consultation",
