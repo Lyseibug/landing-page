@@ -72,7 +72,7 @@ export default function ContactForm() {
       await new Promise((resolve) => setTimeout(resolve, 500));
       setIsSubmitted(true);
       setValues({ name: "", email: "", message: "", subscribe: false });
-    } catch (error) {
+    } catch {
       // Optionally handle submission errors
     } finally {
       setIsSubmitting(false);
