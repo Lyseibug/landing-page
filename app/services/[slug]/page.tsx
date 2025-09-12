@@ -15,7 +15,7 @@ import {
   buildTwitterCard,
   buildServiceJsonLd,
 } from "@/constants/seo";
-export const runtime = 'edge';
+// export const runtime = 'edge';
 
 // Per‑service SEO overrides (title, description, keywords)
 const SEO_OVERRIDES: Record<
