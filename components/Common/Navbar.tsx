@@ -37,7 +37,7 @@ export default function Navbar() {
         {/* CTA button (desktop) */}
         <div className="hidden md:block">
           <a
-            href="#get-started"
+            href="https://cal.com/lyseibug"
             className="rounded-full border border-indigo-900 px-5 py-2 text-sm font-semibold text-indigo-900 transition-colors hover:bg-indigo-50"
           >
             {NAV_TEXT.getStarted}
@@ -96,7 +96,7 @@ export default function Navbar() {
               ))}
             </nav>
             <a
-              href="#get-started"
+              href="https://cal.com/lyseibug"
               className="mt-2 block w-full rounded-full border border-indigo-900 px-5 py-3 text-center font-semibold text-indigo-900 hover:bg-indigo-50"
             >
               {NAV_TEXT.getStarted}

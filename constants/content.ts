@@ -105,7 +105,7 @@ export const CTA_CONTENT = {
   headingLine2: "to power your business?",
   description:
     "Let’s discuss your project and explore how Lyseibug can design, build, and support the right technology for you.",
-  cta: { label: "Schedule a free consultation", href: "#contact" },
+  cta: { label: "Schedule a free consultation", href: "https://cal.com/lyseibug" },
 } as const;
 
 export const FOOTER_CONTENT = {

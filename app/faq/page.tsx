@@ -7,6 +7,7 @@ import {
   buildOpenGraph,
   buildTwitterCard,
 } from "@/constants/seo";
+import CTA from "@/components/CTA";
 
 export const metadata: Metadata = {
   title: `FAQs | ${BRAND_NAME}`,
@@ -91,6 +92,7 @@ export default function FaqPage() {
           </div>
         </div>
       </section>
+      <CTA />
     </>
   );
 }
