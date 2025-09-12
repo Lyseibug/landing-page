@@ -15,7 +15,7 @@ import {
   buildTwitterCard,
   buildServiceJsonLd,
 } from "@/constants/seo";
-// export const runtime = 'edge';
+export const runtime = 'edge';
 
 // Per‑service SEO overrides (title, description, keywords)
 const SEO_OVERRIDES: Record<
@@ -89,13 +89,13 @@ const SEO_OVERRIDES: Record<
   },
 };
 
-export function generateStaticParams() {
-  const slugs = [
-    ...SERVICES_CONTENT.items.map((i) => i.slug),
-    ...SERVICES_PAGE_LIST.map((i) => i.slug),
-  ];
-  return Array.from(new Set(slugs)).map((slug) => ({ slug }));
-}
+// export function generateStaticParams() {
+//   const slugs = [
+//     ...SERVICES_CONTENT.items.map((i) => i.slug),
+//     ...SERVICES_PAGE_LIST.map((i) => i.slug),
+//   ];
+//   return Array.from(new Set(slugs)).map((slug) => ({ slug }));
+// }
 
 export async function generateMetadata({
   params,
