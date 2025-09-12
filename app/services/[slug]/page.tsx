@@ -2,13 +2,25 @@ import type { Metadata } from "next";
 import ServicesDetailHero from "@/components/Services/ServicesDetail";
 import OurApproach from "@/components/Services/OurApproach";
 import Services from "@/components/Services";
-import { SERVICE_DETAILS, SERVICES_CONTENT, SERVICES_PAGE_LIST } from "@/constants/services";
+import {
+  SERVICE_DETAILS,
+  SERVICES_CONTENT,
+  SERVICES_PAGE_LIST,
+} from "@/constants/services";
 import { BRAND_NAME } from "@/constants/content";
 import { notFound } from "next/navigation";
-import { absoluteUrl, buildOpenGraph, buildTwitterCard, buildServiceJsonLd } from "@/constants/seo";
+import {
+  absoluteUrl,
+  buildOpenGraph,
+  buildTwitterCard,
+  buildServiceJsonLd,
+} from "@/constants/seo";
 
 // Per‑service SEO overrides (title, description, keywords)
-const SEO_OVERRIDES: Record<string, { title: string; description: string; keywords: string[] }> = {
+const SEO_OVERRIDES: Record<
+  string,
+  { title: string; description: string; keywords: string[] }
+> = {
   "web-development": {
     title: "Web Development Services | Custom Websites & Web Apps | Lyseibug",
     description:
@@ -48,7 +60,8 @@ const SEO_OVERRIDES: Record<string, { title: string; description: string; keywor
     ],
   },
   "software-rescue": {
-    title: "Software Rescue | Legacy Modernization & Code Refactoring | Lyseibug",
+    title:
+      "Software Rescue | Legacy Modernization & Code Refactoring | Lyseibug",
     description:
       "Rescue failing software projects with rapid audits, stabilization, refactoring, and delivery—turn legacy code into reliable, maintainable software.",
     keywords: [
@@ -60,7 +73,8 @@ const SEO_OVERRIDES: Record<string, { title: string; description: string; keywor
     ],
   },
   "it-support-consultancy": {
-    title: "Managed IT Support & Consultancy | Security, Monitoring, Strategy | Lyseibug",
+    title:
+      "Managed IT Support & Consultancy | Security, Monitoring, Strategy | Lyseibug",
     description:
       "Managed IT support and strategic consultancy to secure systems, ensure compliance, reduce downtime, and align IT with business goals.",
     keywords: [
@@ -82,12 +96,18 @@ export function generateStaticParams() {
   return Array.from(new Set(slugs)).map((slug) => ({ slug }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
   const { slug } = await params;
   const detail = SERVICE_DETAILS[slug as keyof typeof SERVICE_DETAILS];
   if (!detail) return {};
   const override = SEO_OVERRIDES[detail.slug];
-  const titleText = override?.title ?? `${detail.hero.title.line1} ${detail.hero.title.line2} | ${BRAND_NAME}`;
+  const titleText =
+    override?.title ??
+    `${detail.hero.title.line1} ${detail.hero.title.line2} | ${BRAND_NAME}`;
   const descriptionText = override?.description ?? detail.hero.description;
   const url = absoluteUrl(`/services/${detail.slug}`);
   const imageUrl = detail.hero.image?.src;
@@ -100,7 +120,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: titleText,
       description: descriptionText,
       url,
-      images: imageUrl ? [{ url: imageUrl, alt: detail.hero.image.alt }] : undefined,
+      images: imageUrl
+        ? [{ url: imageUrl, alt: detail.hero.image.alt }]
+        : undefined,
     }),
     twitter: buildTwitterCard({
       title: titleText,
@@ -110,7 +132,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-export default async function DetailPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function DetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const detail = SERVICE_DETAILS[slug as keyof typeof SERVICE_DETAILS];
   if (!detail) return notFound();
@@ -120,6 +146,29 @@ export default async function DetailPage({ params }: { params: Promise<{ slug: s
       <ServicesDetailHero content={detail.hero} />
       <OurApproach content={detail.approach} />
       <Services />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Services",
+                item: absoluteUrl("/services"),
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: `${detail.hero.title.line1} ${detail.hero.title.line2}`,
+                item: absoluteUrl(`/services/${detail.slug}`),
+              },
+            ],
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

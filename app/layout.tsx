@@ -4,7 +4,15 @@ import { Poppins } from "next/font/google";
 import Footer from "@/components/Common/Footer";
 import type { Metadata } from "next";
 import { BRAND_NAME } from "@/constants/content";
-import { DEFAULT_SEO, SITE_URL, absoluteUrl, buildOpenGraph, buildTwitterCard, buildOrganizationJsonLd, buildWebsiteJsonLd } from "@/constants/seo";
+import {
+  DEFAULT_SEO,
+  SITE_URL,
+  absoluteUrl,
+  buildOpenGraph,
+  buildTwitterCard,
+  buildOrganizationJsonLd,
+  buildWebsiteJsonLd,
+} from "@/constants/seo";
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 export const dynamic = "force-dynamic";
@@ -12,6 +20,12 @@ export const revalidate = 0;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+    viewportFit: "cover",
+  },
   title: {
     template: DEFAULT_SEO.titleTemplate,
     default: DEFAULT_SEO.defaultTitle,
@@ -55,7 +69,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  manifest: absoluteUrl("/site.webmanifest"),
+  manifest: "/manifest.webmanifest",
 };
 
 export default function RootLayout({
